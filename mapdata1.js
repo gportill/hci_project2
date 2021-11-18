@@ -75,178 +75,171 @@ var simplemaps_statemap_mapdata={
   state_specific: {
     "24001": {
       name: "Allegany",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24003": {
       name: "Anne Arundel",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24005": {
       name: "Baltimore",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24009": {
       name: "Calvert",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "2",
+      color: "#7DCEA0",
+      hover_color: "69AD86",
       url: "default"
     },
     "24011": {
       name: "Caroline",
-      description: "default",
-      color: "default",
+      description: "4",
+      color: "#1E8449",
       hover_color: "default",
       url: "default"
     },
     "24013": {
       name: "Carroll",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "2",
+      color: "#7DCEA0",
+      hover_color: "69AD86",
       url: "default"
     },
     "24015": {
       name: "Cecil",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24017": {
       name: "Charles",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24019": {
       name: "Dorchester",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "4",
+      color: "#1E8449",
+      hover_color: "#1D7F46",
       url: "default"
     },
     "24021": {
       name: "Frederick",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24023": {
       name: "Garrett",
-      description: "default",
-      color: "default",
+      description: "4",
+      color: "#1E8449",
       hover_color: "default",
       url: "default"
     },
     "24025": {
       name: "Harford",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24027": {
       name: "Howard",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24029": {
       name: "Kent",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "5",
+      color: "#145A32",
+      hover_color: "#0E3C22",
       url: "default"
     },
     "24031": {
       name: "Montgomery",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24033": {
-      name: "Prince George'S",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      name: "Prince George's",
+      description: "4",
+      color: "#1E8449",
+      hover_color: "#1D7F46",
       url: "default"
     },
     "24035": {
-      name: "Queen Anne'S",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      name: "Queen Anne's",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24037": {
-      name: "St. Mary'S",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      name: "St. Mary's",
+      description: "4",
+      color: "#1E8449",
+      hover_color: "#1D7F46",
       url: "default"
     },
     "24039": {
       name: "Somerset",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "4",
+      color: "#1E8449",
+      hover_color: "#1D7F46",
       url: "default"
     },
     "24041": {
       name: "Talbot",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "5",
+      color: "#145A32",
+      hover_color: "#0E3C22",
       url: "default"
     },
     "24043": {
       name: "Washington",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
     },
     "24045": {
       name: "Wicomico",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "4",
+      color: "#1E8449",
+      hover_color: "#1D7F46",
       url: "default"
     },
     "24047": {
       name: "Worcester",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "4",
+      color: "#1E8449",
+      hover_color: "#1D7F46",
       url: "default"
     },
     "24510": {
       name: "Baltimore",
-      description: "default",
-      color: "default",
-      hover_color: "default",
+      description: "3",
+      color: "#27AE60",
+      hover_color: "#239C56",
       url: "default"
-    }
-  },
-  locations: {
-    "0": {
-      name: "Example",
-      lat: 38.78719133333333,
-      lng: -77.19431633333333
     }
   },
   labels: {}
