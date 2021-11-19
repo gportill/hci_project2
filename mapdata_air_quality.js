@@ -76,29 +76,29 @@ var simplemaps_statemap_mapdata={
     "24001": {
       name: "Allegany",
       description: "1",
-      color: "#D42323",
-      hover_color: "#AC1D1D",
+      color: "#3c800b",
+      hover_color: "#2f6608",
       url: "default"
     },
     "24003": {
       name: "Anne Arundel",
       description: "32",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#ffe733",
+      hover_color: "#d1bd28",
       url: "default"
     },
     "24005": {
-      name: "Baltimore",
+      name: "Baltimore County",
       description: "39",
-      color: "#FFE600",
-      hover_color: "#EDD712",
+      color: "#ED2938",
+      hover_color: "#b81d29",
       url: "default"
     },
     "24009": {
       name: "Calvert",
       description: "35",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#FFAA1C",
+      hover_color: "#d18b15",
       url: "default"
     },
     "24011": {
@@ -111,78 +111,78 @@ var simplemaps_statemap_mapdata={
     "24013": {
       name: "Carroll",
       description: "39",
-      color: "#FFE600",
-      hover_color: "#EDD712",
+      color: "#ED2938",
+      hover_color: "#b81d29",
       url: "default"
     },
     "24015": {
       name: "Cecil",
       description: "34",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#FFAA1C",
+      hover_color: "#d18b15",
       url: "default"
     },
     "24017": {
       name: "Charles",
       description: "34",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#FFAA1C",
+      hover_color: "#d18b15",
       url: "default"
     },
     "24019": {
       name: "Dorchester",
       description: "35",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#FFAA1C",
+      hover_color: "#d18b15",
       url: "default"
     },
     "24021": {
       name: "Frederick",
       description: "40",
-      color: "#FFE600",
-      hover_color: "#EDD712",
+      color: "#ED2938",
+      hover_color: "#b81d29",
       url: "default"
     },
     "24023": {
       name: "Garrett",
       description: "36",
-      color: "#FFE600",
-      hover_color: "#EDD712",
+      color: "#FF8C01",
+      hover_color: "#d97700",
       url: "default"
     },
     "24025": {
       name: "Harford",
       description: "38",
-      color: "#FFE600",
-      hover_color: "#EDD712",
+      color: "#ED2938",
+      hover_color: "#b81d29",
       url: "default"
     },
     "24027": {
       name: "Howard",
       description: "28",
-      color: "#FE7706",
-      hover_color: "#E47111",
+      color: "#589134",
+      hover_color: "#416b27",
       url: "default"
     },
     "24029": {
       name: "Kent",
       description: "33",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#ffe733",
+      hover_color: "#d1bd28",
       url: "default"
     },
     "24031": {
       name: "Montgomery",
       description: "33",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#ffe733",
+      hover_color: "#d1bd28",
       url: "default"
     },
     "24033": {
       name: "Prince George's",
       description: "37",
-      color: "#FFE600",
-      hover_color: "#EDD712",
+      color: "#ED2938",
+      hover_color: "#b81d29",
       url: "default"
     },
     "24035": {
@@ -216,8 +216,8 @@ var simplemaps_statemap_mapdata={
     "24043": {
       name: "Washington",
       description: "34",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#FFAA1C",
+      hover_color: "#d18b15",
       url: "default"
     },
     "24045": {
@@ -237,8 +237,8 @@ var simplemaps_statemap_mapdata={
     "24510": {
       name: "Baltimore City",
       description: "34",
-      color: "#FFB200",
-      hover_color: "#ECA90E",
+      color: "#FFAA1C",
+      hover_color: "#d18b15",
       url: "default"
     }
   },
