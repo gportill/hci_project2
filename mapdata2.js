@@ -88,7 +88,7 @@ var simplemaps_statemap_mapdata={
       url: "default"
     },
     "24005": {
-      name: "Baltimore",
+      name: "Baltimore County",
       description: "default",
       color: "default",
       hover_color: "default",
@@ -235,7 +235,7 @@ var simplemaps_statemap_mapdata={
       url: "default"
     },
     "24510": {
-      name: "Baltimore",
+      name: "Baltimore City",
       description: "default",
       color: "default",
       hover_color: "default",
