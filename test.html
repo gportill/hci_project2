@@ -32,6 +32,10 @@
 		  width: 80%;
 		  height: 500px;
 	}
+	#map_uninsured {
+		  width: 80%;
+		  height: 500px;
+	}
 	</style>
 
 	<!-- Resources -->
@@ -52,6 +56,10 @@
 	<script type='text/javascript'>	
 	var map1=simplemaps_statemap.create();
 	</script>
+	<script src="mapdata_uninsured.js"></script>
+	<script type='text/javascript'>	
+	var map_uninsured=simplemaps_statemap.create();
+	</script>
 
   </head>
 	<body>
@@ -59,7 +67,7 @@
 		<div id="map_air_quality"></div>
 		<!-- PARAGRAPH 2 -->
 		<p> Although Scott said it didn't matter to him, he knew deep inside that it did. They had been friends as long as he could remember and not once had he had to protest that something Joe apologized for doing didn't really matter. Scott stuck to his lie and insisted again and again that everything was fine as Joe continued to apologize. Scott already knew that despite his words accepting the apologies that their friendship would never be the same. </p>
-		<div id="map1"></div>
+		<!-- <div id="map1"></div>  -->
 		<!-- PARAGRAPH 1 -->
 		<p> demo stack chart </p>
 		<div id="chartdiv"></div>
@@ -67,9 +75,11 @@
 		<p> our stack chart </p>
 		<div id="chartdiv2"></div>
 		<!-- PARAGRAPH 1 -->
-		<p> % uninsured bar chart </p>
-		<div id="chartdiv3"></div>
+		<!-- <p> % uninsured bar chart </p>
+		<div id="chartdiv3"></div> -->
 		<!-- PARAGRAPH 1 -->
+		<p> uninsured heat map </p>
+		<div id="map_uninsured"></div>
 		<p> food access layered bar chart </p>
 		<div id="chartdiv4"></div>
 	</body>
