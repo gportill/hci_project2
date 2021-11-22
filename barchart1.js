@@ -56,7 +56,7 @@ am5.ready(function() {
       name: "Series 1",
       xAxis: xAxis,
       yAxis: yAxis,
-      valueYField: "uninsured",
+      valueYField: "cost_burden",
       sequencedInterpolation: true,
       categoryXField: "year",
       tooltip: am5.Tooltip.new(root, {
@@ -75,78 +75,79 @@ am5.ready(function() {
     
     
     // Set data
+    // TODO
     var data = [{
-    "year": "Calvert",
-    "uninsured": 2
-    }, {
-    "year": "Carroll",
-    "uninsured": 2
-    }, {
     "year": "Allegany",
-    "uninsured": 3
+    "cost_burden": 12
     }, {
     "year": "Anne Arundel",
-    "uninsured": 3
+    "cost_burden": 11
     }, {
     "year": "Baltimore City",
-    "uninsured": 3
+    "cost_burden": 20
     }, {
-    "year": "Baltimore",
-    "uninsured": 3
+    "year": "Baltimore County",
+    "cost_burden": 14
     }, {
-    "year": "Cecil",
-    "uninsured": 3
-    }, {
-    "year": "Charles",
-    "uninsured": 3
-    }, {
-    "year": "Frederick",
-    "uninsured": 3
-    }, {
-    "year": "Harford",
-    "uninsured": 3
-    }, {
-    "year": "Howard",
-    "uninsured": 3
-    }, {
-    "year": "Montgomery",
-    "uninsured": 3
-    }, {
-    "year": "Queen Anne's",
-    "uninsured": 3
-    }, {
-    "year": "Washington",
-    "uninsured": 3
+    "year": "Calvert",
+    "cost_burden": 9
     }, {
     "year": "Caroline",
-    "uninsured": 4
+    "cost_burden": 14
+    }, {
+    "year": "Carroll",
+    "cost_burden": 10
+    }, {
+    "year": "Cecil",
+    "cost_burden": 11
+    }, {
+    "year": "Charles",
+    "cost_burden": 12
     }, {
     "year": "Dorchester",
-    "uninsured": 4
+    "cost_burden": 15
+    }, {
+    "year": "Frederick",
+    "cost_burden": 11
     }, {
     "year": "Garrett",
-    "uninsured": 4
+    "cost_burden": 11
     }, {
-    "year": "Prince George's",
-    "uninsured": 4
+    "year": "Harford",
+    "cost_burden": 12
     }, {
-    "year": "St. Mary's",
-    "uninsured": 4
-    }, {
-    "year": "Somerset",
-    "uninsured": 4
-    }, {
-    "year": "Wicomico",
-    "uninsured": 4
-    }, {
-    "year": "Worcester",
-    "uninsured": 4
-    }, {
-    "year": "Talbot",
-    "uninsured": 5
+    "year": "Howard",
+    "cost_burden": 12
     }, {
     "year": "Kent",
-    "uninsured": 5
+    "cost_burden": 15
+    }, {
+    "year": "Montgomery",
+    "cost_burden": 15
+    }, {
+    "year": "Prince George's",
+    "cost_burden": 16
+    }, {
+    "year": "Queen Anne's",
+    "cost_burden": 11
+    }, {
+    "year": "St. Mary's",
+    "cost_burden": 11
+    }, {
+    "year": "Somerset",
+    "cost_burden": 23
+    }, {
+    "year": "Talbot",
+    "cost_burden": 13
+    }, {
+    "year": "Washington",
+    "cost_burden": 13
+    }, {
+    "year": "Wicomico",
+    "cost_burden": 16
+    }, {
+    "year": "Worcester",
+    "cost_burden": 15
     }]
     
     xAxis.data.setAll(data);
