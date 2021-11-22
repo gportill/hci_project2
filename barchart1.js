@@ -39,7 +39,7 @@ am5.ready(function() {
     
     var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
       maxDeviation: 0.3,
-      categoryField: "country",
+      categoryField: "year",
       renderer: xRenderer,
       tooltip: am5.Tooltip.new(root, {})
     }));
@@ -56,11 +56,11 @@ am5.ready(function() {
       name: "Series 1",
       xAxis: xAxis,
       yAxis: yAxis,
-      valueYField: "value",
+      valueYField: "uninsured",
       sequencedInterpolation: true,
-      categoryXField: "country",
+      categoryXField: "year",
       tooltip: am5.Tooltip.new(root, {
-        labelText:"{valueY}"
+        labelText:"{valueY}%"
       })
     }));
     
@@ -76,42 +76,78 @@ am5.ready(function() {
     
     // Set data
     var data = [{
-      country: "USA",
-      value: 2025
+    "year": "Calvert",
+    "uninsured": 2
     }, {
-      country: "China",
-      value: 1882
+    "year": "Carroll",
+    "uninsured": 2
     }, {
-      country: "Japan",
-      value: 1809
+    "year": "Allegany",
+    "uninsured": 3
     }, {
-      country: "Germany",
-      value: 1322
+    "year": "Anne Arundel",
+    "uninsured": 3
     }, {
-      country: "UK",
-      value: 1122
+    "year": "Baltimore City",
+    "uninsured": 3
     }, {
-      country: "France",
-      value: 1114
+    "year": "Baltimore",
+    "uninsured": 3
     }, {
-      country: "India",
-      value: 984
+    "year": "Cecil",
+    "uninsured": 3
     }, {
-      country: "Spain",
-      value: 711
+    "year": "Charles",
+    "uninsured": 3
     }, {
-      country: "Netherlands",
-      value: 665
+    "year": "Frederick",
+    "uninsured": 3
     }, {
-      country: "Russia",
-      value: 580
+    "year": "Harford",
+    "uninsured": 3
     }, {
-      country: "South Korea",
-      value: 443
+    "year": "Howard",
+    "uninsured": 3
     }, {
-      country: "Canada",
-      value: 441
-    }];
+    "year": "Montgomery",
+    "uninsured": 3
+    }, {
+    "year": "Queen Anne's",
+    "uninsured": 3
+    }, {
+    "year": "Washington",
+    "uninsured": 3
+    }, {
+    "year": "Caroline",
+    "uninsured": 4
+    }, {
+    "year": "Dorchester",
+    "uninsured": 4
+    }, {
+    "year": "Garrett",
+    "uninsured": 4
+    }, {
+    "year": "Prince George's",
+    "uninsured": 4
+    }, {
+    "year": "St. Mary's",
+    "uninsured": 4
+    }, {
+    "year": "Somerset",
+    "uninsured": 4
+    }, {
+    "year": "Wicomico",
+    "uninsured": 4
+    }, {
+    "year": "Worcester",
+    "uninsured": 4
+    }, {
+    "year": "Talbot",
+    "uninsured": 5
+    }, {
+    "year": "Kent",
+    "uninsured": 5
+    }]
     
     xAxis.data.setAll(data);
     series.data.setAll(data);
