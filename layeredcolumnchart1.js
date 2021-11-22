@@ -129,7 +129,7 @@ am5.ready(function() {
     // Create axes
     // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
     var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
-      categoryField: "county",
+      categoryField: "year",
       renderer: am5xy.AxisRendererX.new(root, {}),
       tooltip: am5.Tooltip.new(root, {
         themeTags: ["axis"],
@@ -152,7 +152,7 @@ am5.ready(function() {
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: "0.5",
-      categoryXField: "county",
+      categoryXField: "year",
       clustered: false,
       tooltip: am5.Tooltip.new(root, {
         labelText: "0.5 miles: {valueY}%"
@@ -173,7 +173,7 @@ am5.ready(function() {
       xAxis: xAxis,
       yAxis: yAxis,
       valueYField: "1",
-      categoryXField: "county",
+      categoryXField: "year",
       clustered: false,
       tooltip: am5.Tooltip.new(root, {
         labelText: "1 mile: {valueY}%"
