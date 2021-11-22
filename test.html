@@ -32,6 +32,14 @@
 		  width: 80%;
 		  height: 500px;
 	}
+	#chartdiv5 {
+		  width: 80%;
+		  height: 500px;
+	}
+	#chartdiv6 {
+		  width: 80%;
+		  height: 500px;
+	}
 	#map_uninsured {
 		  width: 80%;
 		  height: 500px;
@@ -47,15 +55,17 @@
 	<script src="stackchart1.js"></script>
 	<script src="stackchart2.js"></script>
 	<script src="layeredcolumnchart1.js"></script>
-    <script src="statemap.js"></script>
+	<script src="clustered_bar_test_scores.js"></script>
+	<script src="clustered_col_test_scores.js"></script>
+  <script src="statemap.js"></script>
 	<script src="mapdata_air_quality.js"></script>
 	<script type='text/javascript'>	
 	var map_air_quality=simplemaps_statemap.create();
 	</script>
-	<script src="mapdata1.js"></script>
-	<script type='text/javascript'>	
+	<!-- <script src="mapdata1.js"></script> -->
+	<!-- <script type='text/javascript'>	
 	var map1=simplemaps_statemap.create();
-	</script>
+	</script> -->
 	<script src="mapdata_uninsured.js"></script>
 	<script type='text/javascript'>	
 	var map_uninsured=simplemaps_statemap.create();
@@ -80,6 +90,10 @@
 		<!-- PARAGRAPH 1 -->
 		<p> uninsured heat map </p>
 		<div id="map_uninsured"></div>
+		<p> clustered col chart test scores </p>
+		<div id="chartdiv6"></div>
+		<p> clustered bar chart test scores </p>
+		<div id="chartdiv5"></div>
 		<p> food access layered bar chart </p>
 		<div id="chartdiv4"></div>
 	</body>
