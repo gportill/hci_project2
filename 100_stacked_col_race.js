@@ -148,7 +148,7 @@ var data = [{
   "black": 1.1, 
   "american_indian": 0.2,
   "asian": 0.4, 
-  // "hawaiian": 0, 
+  "hawaiian": 0, 
   "white": 96.2
 }, {
   "county": "Harford",
@@ -244,7 +244,7 @@ var data = [{
   "black": 12.7, 
   "american_indian": 0.4,
   "asian": 1.5, 
-  // "hawaiian": 0, 
+  "hawaiian": 0, 
   "white": 80.0
 }]
 
