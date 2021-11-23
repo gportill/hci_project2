@@ -90,8 +90,7 @@ var data = [{
 }, {
   "county": "Garrett",
   "all": 78.3,
-  "black": "?",
-  "white": "?"
+
 }, {
   "county": "Harford",
   "all": 79.0,
@@ -185,7 +184,7 @@ function makeSeries(name, fieldName) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{name}, {categoryX}: ${valueY}",
+    tooltipText: "{name}, {categoryX}: {valueY}",
     width: am5.percent(90),
     tooltipY: 0
   });

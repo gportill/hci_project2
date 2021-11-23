@@ -28,32 +28,6 @@ chart.set("scrollbarX", am5.Scrollbar.new(root, {
   orientation: "horizontal"
 }));
 
-// var data = [{
-//   "year": "2021",
-//   "europe": 2.5,
-//   "namerica": 2.5,
-//   "asia": 2.1,
-//   "lamerica": 1,
-//   "meast": 0.8,
-//   "africa": 0.4
-// }, {
-//   "year": "2022",
-//   "europe": 2.6,
-//   "namerica": 2.7,
-//   "asia": 2.2,
-//   "lamerica": 0.5,
-//   "meast": 0.4,
-//   "africa": 0.3
-// }, {
-//   "year": "2023",
-//   "europe": 2.8,
-//   "namerica": 2.9,
-//   "asia": 2.4,
-//   "lamerica": 0.3,
-//   "meast": 0.9,
-//   "africa": 0.5
-// }]
-
 var data = [{
   "county": "Allegany",
   "other": 3.8,
@@ -290,7 +264,7 @@ function makeSeries(name, fieldName) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{name}, {categoryX}:{valueYTotalPercent.formatNumber('#.#')}%",
+    tooltipText: "{categoryX}, {name}: {valueYTotalPercent.formatNumber('#.#')}%",
     tooltipY: am5.percent(10)
   });
   series.data.setAll(data);
@@ -299,17 +273,17 @@ function makeSeries(name, fieldName) {
   // https://www.amcharts.com/docs/v5/concepts/animations/
   series.appear();
 
-  series.bullets.push(function () {
-    return am5.Bullet.new(root, {
-      sprite: am5.Label.new(root, {
-        text: "{valueYTotalPercent.formatNumber('#.#')}%",
-        fill: root.interfaceColors.get("alternativeText"),
-        centerY: am5.p50,
-        centerX: am5.p50,
-        populateText: true
-      })
-    });
-  });
+  // series.bullets.push(function () {
+  //   return am5.Bullet.new(root, {
+  //     sprite: am5.Label.new(root, {
+  //       text: "{valueYTotalPercent.formatNumber('#.#')}%",
+  //       fill: root.interfaceColors.get("alternativeText"),
+  //       centerY: am5.p50,
+  //       centerX: am5.p50,
+  //       populateText: true
+  //     })
+  //   });
+  // });
 
   legend.data.push(series);
 }

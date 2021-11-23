@@ -185,7 +185,7 @@ function makeSeries(name, fieldName) {
   }));
 
   series.columns.template.setAll({
-    tooltipText: "{name}, {categoryX}: {valueY}",
+    tooltipText: "{categoryX}, {name}: {valueY}",
     width: am5.percent(90),
     tooltipY: 0
   });
@@ -213,18 +213,18 @@ function makeSeries(name, fieldName) {
   // https://www.amcharts.com/docs/v5/concepts/animations/
   series.appear();
 
-  series.bullets.push(function () {
-    return am5.Bullet.new(root, {
-      locationY: 0,
-      sprite: am5.Label.new(root, {
-        text: "{valueY}",
-        fill: root.interfaceColors.get("alternativeText"),
-        centerY: 0,
-        centerX: am5.p50,
-        populateText: true
-      })
-    });
-  });
+  // series.bullets.push(function () {
+  //   return am5.Bullet.new(root, {
+  //     locationY: 0,
+  //     sprite: am5.Label.new(root, {
+  //       text: "{valueY}",
+  //       fill: root.interfaceColors.get("alternativeText"),
+  //       centerY: 0,
+  //       centerX: am5.p50,
+  //       populateText: true
+  //     })
+  //   });
+  // });
 
   legend.data.push(series);
 }

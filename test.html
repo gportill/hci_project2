@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Map Example</title>
+    <title>Social Determinants of Health Across Maryland</title>
 
 	<!-- Styles -->
 	<style>
@@ -51,6 +51,10 @@
 		  width: 80%;
 		  height: 700px;
 	}
+	#map_mental_distress {
+		  width: 80%;
+		  height: 700px;
+	}
 	</style>
 
 	<!-- Resources -->
@@ -70,37 +74,42 @@
   <script src="statemap.js"></script>
 	<script src="mapdata_air_quality.js"></script>
 	<script type='text/javascript'>	
-	var map_air_quality=simplemaps_statemap.create();
+		var map_air_quality=simplemaps_statemap.create();
 	</script>
 	<script src="mapdata_uninsured.js"></script>
 	<script type='text/javascript'>	
-	var map_uninsured=simplemaps_statemap.create();
+		var map_uninsured=simplemaps_statemap.create();
+	</script>
+	<script src="mapdata_mental_distress.js"></script>
+	<script type='text/javascript'>	
+		var map_mental_distress=simplemaps_statemap.create();
 	</script>
 
   </head>
 	<body>
-		<h1>heat Map</h1>
+		<h1>Social Determinants of Health Across Maryland</h1>
+		<h2>Median Air Quality Index</h2>
 		<div id="map_air_quality"></div>
 		<!-- PARAGRAPH 2 -->
 		<p> Although Scott said it didn't matter to him, he knew deep inside that it did. They had been friends as long as he could remember and not once had he had to protest that something Joe apologized for doing didn't really matter. Scott stuck to his lie and insisted again and again that everything was fine as Joe continued to apologize. Scott already knew that despite his words accepting the apologies that their friendship would never be the same. </p>
-<!-- 		<p> our stack chart -- removed because we are replacing it with a layered bar chart</p>
-		<div id="chartdiv2"></div> -->
 		<!-- PARAGRAPH 1 -->
-		<p> % Severe Housing Cost Burden </p>
+		<h2> % Severe Housing Cost Burden </h2>
 		<div id="chartdiv3"></div>
 		<!-- PARAGRAPH 1 -->
-		<p> uninsured heat map </p>
+		<h2> Health Access: % Uninsured </h2>
 		<div id="map_uninsured"></div>
-		<p> clustered col chart test scores </p>
+		<h2> Education Quality: Average Test Scores </h2>
 		<div id="chartdiv6"></div>
-		<p> clustered col median household income </p>
+		<h2> Median Household Income </h2>
 		<div id="chartdiv8"></div>
-		<p> clustered col life expectancy </p>
+		<h2> Life Expectancy </h2>
 		<div id="chartdiv9"></div>
-		<p> stacked race chart </p>
+		<h2> Race Breakdown</h2>
 		<div id="chartdiv7"></div>
-		<p> food access layered bar chart </p>
+		<h2> Food Access </h2>
 		<div id="chartdiv4"></div>
+		<h2> % Frequent Mental Distress </h2>
+		<div id="map_mental_distress"></div>
 	</body>
 </html>
       
