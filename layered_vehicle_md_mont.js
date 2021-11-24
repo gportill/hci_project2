@@ -32,12 +32,12 @@ am5.ready(function() {
     "year": "Baltimore City",
     "0.5": 47,
     "1": 5, 
-    "vehicle": 70
+    "vehicle": 30
     }, {
     "year": "Montgomery",
     "0.5": 56,
     "1": 20, 
-    "vehicle": 92.5
+    "vehicle": 7.5
     }]
 
     // Create axes
@@ -61,25 +61,6 @@ am5.ready(function() {
     // Add series
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 
-    var series2 = chart.series.push(am5xy.ColumnSeries.new(root, {
-      name: "% Households with Vehicle",
-      xAxis: xAxis,
-      yAxis: yAxis,
-      valueYField: "vehicle",
-      categoryXField: "year",
-      clustered: false,
-      tooltip: am5.Tooltip.new(root, {
-        labelText: "% Households with Vehicle: {valueY}%"
-      })
-    }));
-
-    series2.columns.template.setAll({
-      width: am5.percent(80),
-      tooltipY: 0
-    });
-
-    series2.data.setAll(data);
-
     var series0 = chart.series.push(am5xy.ColumnSeries.new(root, {
       name: "% People Beyond 1/2 Mile From a Grocery Store",
       xAxis: xAxis,
@@ -93,7 +74,7 @@ am5.ready(function() {
     }));
 
     series0.columns.template.setAll({
-      width: am5.percent(65),
+      width: am5.percent(80),
       tooltipY: 0
     });
 
@@ -114,11 +95,30 @@ am5.ready(function() {
     }));
 
     series1.columns.template.setAll({
-      width: am5.percent(50),
+      width: am5.percent(65),
       tooltipY: 0
     });
 
     series1.data.setAll(data);
+
+    var series2 = chart.series.push(am5xy.ColumnSeries.new(root, {
+      name: "% Households without Vehicle Access",
+      xAxis: xAxis,
+      yAxis: yAxis,
+      valueYField: "vehicle",
+      categoryXField: "year",
+      clustered: false,
+      tooltip: am5.Tooltip.new(root, {
+        labelText: "% Households without Vehicle Access: {valueY}%"
+      })
+    }));
+
+    series2.columns.template.setAll({
+      width: am5.percent(50),
+      tooltipY: 0
+    });
+
+    series2.data.setAll(data);
 
     var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
 
