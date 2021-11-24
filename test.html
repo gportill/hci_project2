@@ -83,9 +83,17 @@
 		  width: 80%;
 		  height: 500px;
 	}
-	#map_uninsured {
+	#chartdiv19 {
 		  width: 80%;
-		  height: 700px;
+		  height: 500px;
+	}
+	#map_uninsured {
+		  width: 40%;
+		  height: 300px;
+	}
+	#map_uninsured_adults {
+		  width: 40%;
+		  height: 300px;
 	}
 	#map_mental_distress {
 		  width: 80%;
@@ -99,34 +107,43 @@
 	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 	<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
 
-<!-- 	<script src="barchart1.js"></script> -->
+	<!-- <script src="barchart1.js"></script> -->
 	<!-- <script src="stackchart1.js"></script> -->
 	<!-- <script src="stackchart2.js"></script> -->
 	<script src="layeredcolumnchart1.js"></script>
-	<script src="100_stacked_col_race.js"></script>
+	<!-- <script src="100_stacked_col_race.js"></script> -->
+	<script src="100_stacked_col_race_balt_mont.js"></script>
 	<script src="clustered_column_life_expectancy.js"></script>
 	<!-- <script src="clustered_bar_test_scores.js"></script> -->
 	<script src="clustered_col_test_scores.js"></script>
 	<script src="clustered_col_balt_mont.js"></script>
-<!-- 	<script src="line_multi_axes_housing.js"></script> -->
+	<!-- <script src="line_multi_axes_housing.js"></script> -->
 	<script src="grouped_and_sorted_cols_housing.js"></script>
 	<script src="clustered_col_balt_mont_income.js"></script>
 	<script src="clustered_col_balt_mont_life.js"></script>
-	<script src="clustered_col_income.js"></script>
+	<!-- <script src="clustered_col_income.js"></script> -->
 	<script src="exploding_pie_food_access.js"></script>
 	<script src="layered_vehicle_md_mont.js"></script>
-<!-- 	<script src="pie_baltimore_grocery.js"></script>
-	<script src="pie_montgomery_grocery.js"></script> -->
+	<!-- <script src="pie_baltimore_grocery.js"></script> -->
+	<!-- <script src="pie_montgomery_grocery.js"></script> -->
 
   <script src="statemap.js"></script>
+
 	<script src="mapdata_air_quality.js"></script>
 	<script type='text/javascript'>	
 		var map_air_quality=simplemaps_statemap.create();
 	</script>
+
 	<script src="mapdata_uninsured.js"></script>
 	<script type='text/javascript'>	
 		var map_uninsured=simplemaps_statemap.create();
 	</script>
+
+	<script src="mapdata_uninsured_adults.js"></script>
+	<script type='text/javascript'>	
+		var map_uninsured_adults=simplemaps_statemap.create();
+	</script>
+
 	<script src="mapdata_mental_distress.js"></script>
 	<script type='text/javascript'>	
 		var map_mental_distress=simplemaps_statemap.create();
@@ -136,33 +153,24 @@
 	<body>
 		<h1>Social Determinants of Health Across Maryland</h1>
 
-		<h2>Demographics</h2>
-
-		<!-- removed income graph with all counties--we will use the graph in chartdiv14, which focuses on income between Montgomery and Baltimore, to explain what we see for severe housing cost burden -->
-		<!-- <h3> Median Household Income </h3> -->
-		<!-- <div id="chartdiv8"></div> -->
-
-		<h3> Race Breakdown</h3>
-		<div id="chartdiv7"></div>
-
 		<h2> Social Determinants of Health </h2>
 		<h3> Median Air Quality Index </h3>
 		<div id="map_air_quality"></div>
-		<!-- PARAGRAPH 2 -->
-		<p> Although Scott said it didn't matter to him, he knew deep inside that it did. They had been friends as long as he could remember and not once had he had to protest that something Joe apologized for doing didn't really matter. Scott stuck to his lie and insisted again and again that everything was fine as Joe continued to apologize. Scott already knew that despite his words accepting the apologies that their friendship would never be the same. </p>
-		<!-- PARAGRAPH 1 -->
+
 		<h3> % Severe Housing Cost Burden </h3>
-		<!-- chartdiv3 had a very simple graph with housing burden -->
-		<!-- <div id="chartdiv3"></div>  -->
-<!-- 		<div id="chartdiv17"></div> -->
 		<div id="chartdiv18"></div>
-		<!-- PARAGRAPH 1 -->
+
 		<h3> Average Test Scores </h3>
 		<div id="chartdiv6"></div>
+
 		<h3> Grocery Store Access </h3>
 		<div id="chartdiv4"></div>
 		<div id="chartdiv16"></div>
+
 		<h3> Health Access: % Uninsured </h3>
+		<h4> % Uninsured Adults</h4>
+		<div id="map_uninsured_adults"></div>
+		<h4> % Uninsured Children</h4>
 		<div id="map_uninsured"></div>
 
 		<h2>Health Outcomes</h2>
@@ -171,21 +179,17 @@
 		<h3> % Frequent Mental Distress </h3>
 		<div id="map_mental_distress"></div>
 
-		<h2> Baltimore City vs. Montgomery County </h2>
+		<!-- BELOW: Baltimore City vs. Montgomery graphs. Excluded for now since I think we should do analysis of the two counties under the graphs above, instead of creating graphs for the two counties (this probably doesn't make much sense, so just ask me haha) -->
+		<!-- <h2> Baltimore City vs. Montgomery County </h2> -->
+		<!-- <h3> Average Test Scores in Baltimore City and Montgomery</h3> -->
+		<!-- <div id="chartdiv13"></div> -->
+		<!-- <h3> Income Levels in Baltimore City and Montgomery</h3> -->
+		<!-- <div id="chartdiv14"></div> -->
+		<!-- <h3> Life Expectancy in Baltimore City and Montgomery</h3> -->
+		<!-- <div id="chartdiv15"></div> -->
+		<!-- <h3> Race Breakdown of Baltimore City and Montgomery</h3> -->
+		<!-- <div id="chartdiv19"></div> -->
 
-		<div id="chartdiv13"></div>
-		<div id="chartdiv14"></div>
-
-		<h3> Grocery Store Access </h3>
-		<p>Looking only at the percentages of the population that are beyond a half mile or one mile from a grocery store, it appears that Montgomery has lower food access than Baltimore City. Only 5% of Baltimore residents are farther than one mile from a grocery store, while four times that--20%--of Montgomery residents live beyond one mile from a grocery store. However, it is important to consider vehicle access. Having a car significantly eases the commute to a grocery store, even for people who live beyond a mile from a grocery store. </p>
-		<div id="chartdiv10"></div>
-		<p>As it turns out, 92.5% of Montgomery residents have access to a vehicle [CITE mdfoodsystemmap.org]. Since the overwhelming majority of residents seem to have reliable access to grocery stores, they can simply use their cars to get to the store, even if they live farther than a mile from the nearest grocery store. Meanwhile, vehicle access in Baltimore City is only 70% [CITE mdfoodsystemmap.org], which could mean that many of the 7.5% of residents living farther than one mile from a grocery store might not have dependable transportation to a grocery store. Meanwhile, Montgomery residents have greater vehicle access, so living farther than one mile from a grocery store in Montgomery might not have such a severe impact on food access as it would in Baltimore City.</p>
-
-		<div id="chartdiv15"></div>
-
-<!-- 		<div id="chartdiv11"></div>
-
-		<div id="chartdiv12"></div> -->
 	</body>
 </html>
       
