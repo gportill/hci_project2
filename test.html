@@ -59,6 +59,22 @@
 		  width: 80%;
 		  height: 500px;
 	}
+	#chartdiv13 {
+		  width: 80%;
+		  height: 500px;
+	}
+	#chartdiv14 {
+		  width: 80%;
+		  height: 500px;
+	}
+	#chartdiv15 {
+		  width: 80%;
+		  height: 500px;
+	}
+	#chartdiv16 {
+		  width: 90%;
+		  height: 600px;
+	}
 	#map_uninsured {
 		  width: 80%;
 		  height: 700px;
@@ -73,6 +89,7 @@
 	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
 	<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
 
 	<script src="barchart1.js"></script>
 	<!-- <script src="stackchart1.js"></script> -->
@@ -82,7 +99,11 @@
 	<script src="clustered_column_life_expectancy.js"></script>
 	<!-- <script src="clustered_bar_test_scores.js"></script> -->
 	<script src="clustered_col_test_scores.js"></script>
+	<script src="clustered_col_balt_mont.js"></script>
+	<!-- <script src="clustered_col_balt_mont_income.js"></script> -->
+	<script src="clustered_col_balt_mont_life.js"></script>
 	<script src="clustered_col_income.js"></script>
+	<script src="exploding_pie_food_access.js"></script>
 	<script src="layered_vehicle_md_mont.js"></script>
 <!-- 	<script src="pie_baltimore_grocery.js"></script>
 	<script src="pie_montgomery_grocery.js"></script> -->
@@ -120,10 +141,11 @@
 		<h3> % Severe Housing Cost Burden </h3>
 		<div id="chartdiv3"></div>
 		<!-- PARAGRAPH 1 -->
-		<h3> Education Quality: Average Test Scores </h3>
+		<h3> Average Test Scores </h3>
 		<div id="chartdiv6"></div>
 		<h3> Grocery Store Access </h3>
 		<div id="chartdiv4"></div>
+		<div id="chartdiv16"></div>
 		<h3> Health Access: % Uninsured </h3>
 		<div id="map_uninsured"></div>
 
@@ -134,10 +156,16 @@
 		<div id="map_mental_distress"></div>
 
 		<h2> Baltimore City vs. Montgomery County </h2>
+
+		<div id="chartdiv13"></div>
+		<!-- <div id="chartdiv14"></div> -->
+
 		<h3> Grocery Store Access </h3>
-		<div id="chartdiv10"></div>
 		<p>Looking only at the percentages of the population that are beyond a half mile or one mile from a grocery store, it appears that Montgomery has lower food access than Baltimore City. Only 5% of Baltimore residents are farther than one mile from a grocery store, while four times that--20%--of Montgomery residents live beyond one mile from a grocery store. However, it is important to consider vehicle access. Having a car significantly eases the commute to a grocery store, even for people who live beyond a mile from a grocery store. </p>
+		<div id="chartdiv10"></div>
 		<p>As it turns out, 92.5% of Montgomery residents have access to a vehicle [CITE mdfoodsystemmap.org]. Since the overwhelming majority of residents seem to have reliable access to grocery stores, they can simply use their cars to get to the store, even if they live farther than a mile from the nearest grocery store. Meanwhile, vehicle access in Baltimore City is only 70% [CITE mdfoodsystemmap.org], which could mean that many of the 7.5% of residents living farther than one mile from a grocery store might not have dependable transportation to a grocery store. Meanwhile, Montgomery residents have greater vehicle access, so living farther than one mile from a grocery store in Montgomery might not have such a severe impact on food access as it would in Baltimore City.</p>
+
+		<div id="chartdiv15"></div>
 
 <!-- 		<div id="chartdiv11"></div>
 
