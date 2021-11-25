@@ -75,168 +75,168 @@ var simplemaps_statemap_mapdata={
   state_specific: {
     "24001": {
       name: "Allegany",
-      description: "15%",
+      description: "82%",
       color: "#2577fa",
       hover_color: "#216ade",
       url: "default"
     },
     "24003": {
       name: "Anne Arundel",
-      description: "11%",
+      description: "92%",
       color: "#bfd8ff",
       hover_color: "#acc2e6",
       url: "default"
     },
     "24510": {
       name: "Baltimore City",
-      description: "15%",
+      description: "100%",
       color: "#2577fa",
       hover_color: "#216ade",
       url: "default"
     },
     "24005": {
       name: "Baltimore County",
-      description: "13%",
+      description: "96%",
       color: "#7dafff",
       hover_color: "#729fe8",
       url: "default"
     },
     "24009": {
       name: "Calvert",
-      description: "12%",
+      description: "61%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24011": {
       name: "Caroline",
-      description: "16%",
+      description: "48%",
       color: "#005ff7",
       hover_color: "#0057e3",
       url: "default"
     },
     "24013": {
       name: "Carroll",
-      description: "12%",
+      description: "87%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24015": {
       name: "Cecil",
-      description: "14%",
+      description: "81%",
       color: "#5797ff",
       hover_color: "#4d87e3",
       url: "default"
     },
     "24017": {
       name: "Charles",
-      description: "12%",
+      description: "77%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24019": {
       name: "Dorchester",
-      description: "15%",
+      description: "68%",
       color: "#2577fa",
       hover_color: "#216ade",
       url: "default"
     },
     "24021": {
       name: "Frederick",
-      description: "12%",
+      description: "92%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24023": {
       name: "Garrett",
-      description: "15%",
+      description: "73%",
       color: "#2577fa",
       hover_color: "#216ade",
       url: "default"
     },
     "24025": {
       name: "Harford",
-      description: "12%",
+      description: "90%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24027": {
       name: "Howard",
-      description: "10%",
+      description: "96%",
       color: "#d4e4ff",
       hover_color: "#c3d2eb",
       url: "default"
     },
     "24029": {
       name: "Kent",
-      description: "13%",
+      description: "57%",
       color: "#7dafff",
       hover_color: "#729fe8",
       url: "default"
     },
     "24031": {
       name: "Montgomery",
-      description: "10%",
+      description: "100%",
       color: "#d4e4ff",
       hover_color: "#c3d2eb",
       url: "default"
     },
     "24033": {
       name: "Prince George's",
-      description: "12%",
+      description: "98%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24035": {
       name: "Queen Anne's",
-      description: "12%",
+      description: "82%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24037": {
       name: "St. Mary's",
-      description: "13%",
+      description: "77%",
       color: "#7dafff",
       hover_color: "#729fe8",
       url: "default"
     },
     "24039": {
       name: "Somerset",
-      description: "16%",
+      description: "61%",
       color: "#005ff7",
       hover_color: "#0057e3",
       url: "default"
     },
     "24041": {
       name: "Talbot",
-      description: "12%",
+      description: "76%",
       color: "#a3c6ff",
       hover_color: "#95b4e6",
       url: "default"
     },
     "24043": {
       name: "Washington",
-      description: "15%",
+      description: "75%",
       color: "#2577fa",
       hover_color: "#216ade",
       url: "default"
     },
     "24045": {
       name: "Wicomico",
-      description: "15%",
+      description: "77%",
       color: "#2577fa",
       hover_color: "#216ade",
       url: "default"
     },
     "24047": {
       name: "Worcester",
-      description: "13%",
+      description: "90%",
       color: "#7dafff",
       hover_color: "#729fe8",
       url: "default"
