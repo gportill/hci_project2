@@ -107,6 +107,10 @@
 		  width: 80%;
 		  height: 700px;
 	}
+	#map_test_scores {
+		  width: 80%;
+		  height: 700px;
+	}
 	</style>
 
 	<!-- Resources -->
@@ -159,6 +163,12 @@
 		var map_mental_distress=simplemaps_statemap.create();
 	</script>
 
+	<script src="mapdata_avg_test_scores.js"></script>
+	<script type='text/javascript'>	
+		var map_test_scores=simplemaps_statemap.create();
+	</script>
+
+
   </head>
 	<body>
 		<h1>Social Determinants of Health Across Maryland</h1>
@@ -173,6 +183,7 @@
 		<h3> Average Test Scores </h3>
 		<!-- <div id="chartdiv6"></div> --> 
 		<div id="chartdiv21"></div>
+		<div id="map_test_scores"></div>
 
 		<h3> Grocery Store Access </h3>
 		<div id="chartdiv4"></div>
