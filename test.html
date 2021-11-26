@@ -111,6 +111,7 @@
 		  height: 700px;
 	}
 	#map_physical_activity {
+		display: none;
 		  min-height: 700px;
 	}
 	#map_primary_care{
@@ -223,29 +224,27 @@
 		<label for="selectedMap">Choose a map to view:</label>
 
 		<select id="selected">
-			<option value="air_quality" selected>Air quality</option>
-			<option value="physical_activity">Physical activity</option>
+			<option value="air_quality" selected>Median Air Quality Index</option>
+			<option value="physical_activity">% People with Access to Physical Activity</option>
 		</select>
 		<script>
 			$("#selected").on('change', function() {
 				var sel = $("select").val();
 				if (sel=='air_quality') {
-				   $("#air_quality_block").show();
-				   $("#physical_activity_block").hide();
+				   $("#map_air_quality").show();
+				   $("#map_physical_activity").hide();
 				}else if (sel=='physical_activity') {
-				   $("#air_quality_block").hide();
-				   $("#physical_activity_block").show();
+				   //$("#air_quality_block").hide();
+				   //$("#physical_activity_block").show();
+				   $("#map_air_quality").hide();
+				   $("#map_physical_activity").show();
 				}
 			});     
 		</script>
-		<div id ="air_quality_block">
-			<h3> Median Air Quality Index </h3>
-			<div id="map_air_quality"></div>
-		</div>
-		<div id="physical_activity_block">
-			<h3> % People with Access to Physical Activity </h3>
-			<div id="map_physical_activity"></div>
-		</div>
+		
+		<div id="map_air_quality" class="mx-auto"></div>
+		<div id="map_physical_activity" class="mx-auto"></div>
+		<p id="states_description">Default</p>
 	
 
 		<h3> % Severe Housing Cost Burden </h3>

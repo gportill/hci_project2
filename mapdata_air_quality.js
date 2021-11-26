@@ -78,7 +78,7 @@ var simplemaps_statemap_mapdata={
       description: "1",
       color: "#137d13",
       hover_color: "#106910",
-      url: "default"
+      url: "data:text/html,<script>alert('hi');</script>"
     },
     "24003": {
       name: "Anne Arundel",
