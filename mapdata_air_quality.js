@@ -10,7 +10,7 @@ var simplemaps_statemap_mapdata={
 		state_description: "State description",
     state_color: "#88A4BC",
     state_hover_color: "#3B729F",
-    state_url: "https://simplemaps.com",
+    state_url: '',
     border_size: 1.5,
     border_color: "#ffffff",
     all_states_inactive: "no",
@@ -78,7 +78,7 @@ var simplemaps_statemap_mapdata={
       description: "1",
       color: "#137d13",
       hover_color: "#106910",
-      url: "data:text/html,<script>alert('hi');</script>"
+      url: "default"
     },
     "24003": {
       name: "Anne Arundel",
