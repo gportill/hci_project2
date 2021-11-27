@@ -82,7 +82,7 @@ am5.ready(function() {
       })
     })
     
-    var nextColor = chart.get("colors").getIndex(1);
+    var nextColor = chart.get("colors").getIndex(3);
     
     series.bullets.push(function() {
       return am5.Bullet.new(root, {
