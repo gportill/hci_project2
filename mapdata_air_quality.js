@@ -75,9 +75,9 @@ var simplemaps_statemap_mapdata={
   state_specific: {
     "24001": {
       name: "Allegany",
-      description: "1",
-      color: "#137d13",
-      hover_color: "#106910",
+      description: "46",
+      color: "#dbffdb",
+      hover_color: "#ccebcc",
       url: "default"
     },
     "24003": {
