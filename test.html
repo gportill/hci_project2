@@ -7,10 +7,10 @@
 
 	<!-- Styles -->
 	<style>
-	#map_air_quality {
+	/*#map_air_quality {
 		width:80%;
-	  	min-height: 700px;
-	}
+	  	height: 700px;
+	}*/
 	#chartdiv {
 	  width: 80%;
 	  height: 500px;
@@ -71,18 +71,16 @@
 		  width: 70%;
 		  height: 300px;
 	}
-	#map_mental_distress {
+	/*#map_mental_distress {
 		  width: 80%;
 		  height: 700px;
-	}
+	}*/
 	#map_test_scores {
 		  width: 80%;
 		  height: 700px;
 	}
 	#map_physical_activity {
 		display: none;
-		width:80%;
-		min-height: 700px;
 	}
 	#map_primary_care{
 		  width: 70%;
@@ -94,6 +92,12 @@
 	}
 	#map_mental_days {
 		display:none;
+	}
+	#mental_oc_block {
+		width: 80%;
+		height: 700px;
+	}
+	#env_block {
 		width: 80%;
 		height: 700px;
 	}
@@ -198,8 +202,8 @@
 	  
 			  <label for="selectedMap1">Choose a map to view:</label>
 			  <select id="selected_oc">
-				  <option value="mental_distress" selected>% Frequent Mental Distress</option>
-				  <option value="mental_days">Average Number of Poor Mental Health Days</option>
+				  <option value="mental_distress" selected>Frequent Mental Distress</option>
+				  <option value="mental_days">Number of Poor Mental Health Days</option>
 			  </select>
 			  <script>
 				  $("#selected_oc").on('change', function() {
@@ -215,46 +219,53 @@
 					  }
 				  });     
 			  </script>
-			  <h3 id="mental_title"> % Frequent Mental Distress </h3>
-			  <div id="map_mental_distress" class="mx-auto"></div>
-			  <div id="map_mental_days" class="mx-auto"></div>
-	  
+			  <div id="mental_oc_block" class="mx-auto">
+				<h3 id="mental_title"> % Frequent Mental Distress </h3>
+			  	<div id="map_mental_distress" class="mx-auto"></div>
+			  	<div id="map_mental_days" class="mx-auto"></div>
+	  		</div>
+			  
 		<h2> Neighborhood and Built Environment </h2>
 		
 		<label for="selectedMap2">Choose a map to view:</label>
 
 		<select id="selected_env">
-			<option value="air_quality" selected>Median Air Quality Index</option>
-			<option value="physical_activity">% People with Access to Physical Activity</option>
+			<option value="air_quality" selected>Air Quality</option>
+			<option value="physical_activity">Access to Physical Activity</option>
 		</select>
 		<script>
 			$("#selected_env").on('change', function() {
 				var sel = $("#selected_env").val();
 				if (sel=='air_quality') {
+					$("#env_title").text("Median Air Quality Index");
 				   $("#map_air_quality").show();
 				   $("#map_physical_activity").hide();
 				}else if (sel=='physical_activity') {
+					$("#env_title").text("% People with Access to Physical Activity");
 				   $("#map_air_quality").hide();
 				   $("#map_physical_activity").show();
 				}
 			});     
 		</script>
-		<div id="map_air_quality" class="mx-auto"></div>
-		<div id="map_physical_activity" class="mx-auto"></div>
+		<div id="env_block" class="mx-auto">
+			<h3 id="env_title"> Median Air Quality Index  </h3>
+			<div id="map_air_quality" class="mx-auto"></div>
+			<div id="map_physical_activity" class="mx-auto"></div>
+		</div>
 		<!-- <p id="states_description">Default</p> -->
 	
 		<h3> % Severe Housing Cost Burden </h3>
-		<div id="chart_housing_cost"></div>
+		<div id="chart_housing_cost" class="mx-auto"></div>
 
 		<h3> Income </h3>
-		<div id="income"></div> <!-- added -->
+		<div id="income" class="mx-auto"></div> <!-- added -->
 
 		<h3> Black and White Test Scores </h3>
 		<!-- <div id="chartdiv6"></div> --> 
-		<div id="vert_bw_test_scores"></div>
+		<div id="vert_bw_test_scores" class="mx-auto"></div>
 
 		<h3> Average Test Scores </h3>
-		<div id="map_test_scores"></div>
+		<div id="map_test_scores" class="mx-auto"></div>
 
 		<h3> Grocery Store Access </h3>
 		<div id="layered_grocery"></div>
