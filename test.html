@@ -93,8 +93,9 @@
 		  height: 300px;
 	}
 	#map_mental_days {
-		  width: 80%;
-		  height: 700px;
+		display:none;
+		width: 80%;
+		height: 700px;
 	}
 	</style>
 
@@ -189,24 +190,50 @@
 			  </div>
 		
 
-		<h2> Neighborhood and Built Environment </h2>
-		<!-- TODO: Button to view either air quality map or physical acivity map -->
-		
-		<label for="selectedMap">Choose a map to view:</label>
+			  <h2>Health Outcomes</h2>
 
-		<select id="selected">
+			  <h3> Life Expectancy </h3>
+			  <!-- <div id="chartdiv9"></div> -->
+			  <div id="life_expectancy" class="mx-auto"></div>
+	  
+			  <label for="selectedMap1">Choose a map to view:</label>
+			  <select id="selected_oc">
+				  <option value="mental_distress" selected>% Frequent Mental Distress</option>
+				  <option value="mental_days">Average Number of Poor Mental Health Days</option>
+			  </select>
+			  <script>
+				  $("#selected_oc").on('change', function() {
+					  var sel = $("#selected_oc").val();
+					  if (sel=='mental_distress') {
+						$("#mental_title").text("% Frequent Mental Distress");
+						 $("#map_mental_distress").show();
+						 $("#map_mental_days").hide();
+					  }else if (sel=='mental_days') {
+						 $("#mental_title").text("Average Number of Poor Mental Health Days");
+						 $("#map_mental_distress").hide();
+						 $("#map_mental_days").show();
+					  }
+				  });     
+			  </script>
+			  <h3 id="mental_title"> % Frequent Mental Distress </h3>
+			  <div id="map_mental_distress" class="mx-auto"></div>
+			  <div id="map_mental_days" class="mx-auto"></div>
+	  
+		<h2> Neighborhood and Built Environment </h2>
+		
+		<label for="selectedMap2">Choose a map to view:</label>
+
+		<select id="selected_env">
 			<option value="air_quality" selected>Median Air Quality Index</option>
 			<option value="physical_activity">% People with Access to Physical Activity</option>
 		</select>
 		<script>
-			$("#selected").on('change', function() {
-				var sel = $("select").val();
+			$("#selected_env").on('change', function() {
+				var sel = $("#selected_env").val();
 				if (sel=='air_quality') {
 				   $("#map_air_quality").show();
 				   $("#map_physical_activity").hide();
 				}else if (sel=='physical_activity') {
-				   //$("#air_quality_block").hide();
-				   //$("#physical_activity_block").show();
 				   $("#map_air_quality").hide();
 				   $("#map_physical_activity").show();
 				}
@@ -259,19 +286,6 @@
 			</div>
 		</div>
 
-		<h2>Health Outcomes</h2>
-
-		<!-- TODO: fix y-axis. it should not start at 0. start at like 65. -->
-		<h3> Life Expectancy </h3>
-		<!-- <div id="chartdiv9"></div> -->
-		<div id="life_expectancy"></div>
-
-		<!-- TODO: button to view either percent mental distress map or poor mental health days map -->
-		<h3> % Frequent Mental Distress </h3>
-		<div id="map_mental_distress"></div>
-
-		<h3> Average Number of Poor Mental Health Days </h3>
-		<div id="map_mental_days"></div>
 
 		<!-- IMPORTANT: might want to include a race breakdown graph (either of just the two counties or of all counties) -->
 
