@@ -76,7 +76,7 @@ series.bullets.push(function() {
   })
 })
 
-var nextColor = chart.get("colors").getIndex(1);
+var nextColor = chart.get("colors").getIndex(3);
 
 series.bullets.push(function() {
   return am5.Bullet.new(root, {
@@ -96,7 +96,7 @@ series.bullets.push(function() {
 var data = [{
   category: "Worcester",
   open: -0.34,
-  close: -1.58
+  close: 2.41
 }, {
   category: "Wicomico",
   open: -1.58,
