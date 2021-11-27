@@ -28,17 +28,27 @@ cursor.lineY.set("visible", false);
 
 // Create axes
 // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+// var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+// xRenderer.labels.template.setAll({ text: "" });      // changed
+
 var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
-xRenderer.labels.template.setAll({ text: "" });      // changed
+xRenderer.labels.template.setAll({
+  rotation: -90,
+  centerY: am5.p50,
+  centerX: am5.p100,
+  paddingRight: 15,
+  text: ""
+});
 
 // changed -- made label text equal to ""
 var xAxis = chart.xAxes.push(
   am5xy.CategoryAxis.new(root, {
+    //rotation: 60, // changed to make x axis disappear
     maxDeviation: 0,
     categoryField: "category",
     renderer: xRenderer,
     tooltip: am5.Tooltip.new(root, {
-      labelText: ""
+      labelText: "{realName}"
     })
   })
 );
@@ -50,11 +60,29 @@ var yAxis = chart.yAxes.push(
   })
 );
 
+yAxis.children.unshift(
+  am5.Label.new(root, {
+    rotation: -90,
+    text: "Cost of Living (index)",
+    y: am5.p50,
+    centerX: am5.p50
+  })
+);
+
 var yAxis2 = chart.yAxes.push(
   am5xy.ValueAxis.new(root, {
     maxDeviation: 0.3,
     syncWithAxis: yAxis,
     renderer: am5xy.AxisRendererY.new(root, { opposite: true })
+  })
+);
+
+yAxis2.children.unshift(
+  am5.Label.new(root, {
+    rotation: -90,
+    text: "% Severe Burden (percentages)",
+    y: am5.p50,
+    centerX: am5.p50
   })
 );
 
@@ -235,7 +263,7 @@ var data = {
   }
 };
 
-// process data ant prepare it for the chart
+// process data and prepare it for the chart
 for (var providerName in data) {
   var providerData = data[providerName];
 

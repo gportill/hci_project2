@@ -48,6 +48,7 @@ var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
   renderer: am5xy.AxisRendererX.new(root, {})
 }));
 
+
 // Create series
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 var series = chart.series.push(am5xy.ColumnSeries.new(root, {

@@ -152,9 +152,19 @@ am5.ready(function() {
 
     // Create axes
     // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+    var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+    xRenderer.labels.template.setAll({
+      rotation: -90,
+      centerY: am5.p50,
+      centerX: am5.p100,
+      paddingRight: 15,
+    });
+
+
     var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
       categoryField: "year",
-      renderer: am5xy.AxisRendererX.new(root, {}),
+      //renderer: am5xy.AxisRendererX.new(root, {}),
+      renderer: xRenderer,
       tooltip: am5.Tooltip.new(root, {
         themeTags: ["axis"],
         animationDuration: 200
@@ -167,6 +177,15 @@ am5.ready(function() {
       min: 0,
       renderer: am5xy.AxisRendererY.new(root, {})
     }));
+
+    yAxis.children.unshift(
+      am5.Label.new(root, {
+        rotation: -90,
+        text: "Percentages",
+        y: am5.p50,
+        centerX: am5.p50
+      })
+    );
 
     // Add series
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
@@ -190,7 +209,6 @@ am5.ready(function() {
 
 
     series0.data.setAll(data);
-
 
     var series1 = chart.series.push(am5xy.ColumnSeries.new(root, {
       name: "% People Beyond 1 Mile From a Grocery Store",

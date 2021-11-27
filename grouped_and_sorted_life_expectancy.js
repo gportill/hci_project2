@@ -29,7 +29,14 @@ cursor.lineY.set("visible", false);
 // Create axes
 // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
 var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
-xRenderer.labels.template.setAll({ text: "" });      // changed
+// xRenderer.labels.template.setAll({ text: "" });      // changed
+xRenderer.labels.template.setAll({
+  rotation: -90,
+  centerY: am5.p50,
+  centerX: am5.p100,
+  paddingRight: 15,
+  text: ""
+});
 
 // changed -- made label text equal to ""
 var xAxis = chart.xAxes.push(
@@ -38,15 +45,27 @@ var xAxis = chart.xAxes.push(
     categoryField: "category",
     renderer: xRenderer,
     tooltip: am5.Tooltip.new(root, {
-      labelText: ""
+      labelText: "{realName}"
+      // labelText: ""
     })
   })
 );
 
 var yAxis = chart.yAxes.push(
   am5xy.ValueAxis.new(root, {
+    min: 60,
+    max: 90,
     maxDeviation: 0.3,
     renderer: am5xy.AxisRendererY.new(root, {})
+  })
+);
+
+yAxis.children.unshift(
+  am5.Label.new(root, {
+    rotation: -90,
+    text: "Life Expectancy (years)",
+    y: am5.p50,
+    centerX: am5.p50
   })
 );
 
