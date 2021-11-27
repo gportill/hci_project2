@@ -76,170 +76,170 @@ var simplemaps_statemap_mapdata={
   state_specific: {
     "24001": {
       name: "Allegany",
-      description: "220",
-      color: "#a9c9fc",
-      hover_color: "#a0c0f2",
+      description: "320:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
       url: "default"
     },
     "24003": {
       name: "Anne Arundel",
-      description: "1180",
-      color: "#679bf0",
-      hover_color: "#5b8dde",
+      description: "491:1",
+      color: "#4082ed",
+      hover_color: "#3d7be0",
       url: "default"
     },
     "24005": {
       name: "Baltimore County",
-      description: "2703",
-      color: "#2e75e8",
-      hover_color: "#2a6fde",
+      description: "306:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
       url: "default"
     },
     "24009": {
       name: "Calvert",
-      description: "182",
-      color: "#bfd8ff",
-      hover_color: "#b2c9ed",
+      description: "508:1",
+      color: "#4f8cf0",
+      hover_color: "#4a83e0",
       url: "default"
     },
     "24011": {
       name: "Caroline",
-      description: "15",
+      description: "2227:1",
       color: "#e8f1ff",
       hover_color: "#e6eefa",
       url: "default"
     },
     "24013": {
       name: "Carroll",
-      description: "277",
-      color: "#a9c9fc",
-      hover_color: "#a0c0f2",
+      description: "447:1",
+      color: "#2e75e8",
+      hover_color: "#2a6fde",
       url: "default"
     },
     "24015": {
       name: "Cecil",
-      description: "223",
-      color: "#a9c9fc",
-      hover_color: "#a0c0f2",
+      description: "461:1",
+      color: "#4082ed",
+      hover_color: "#3d7be0",
       url: "default"
     },
     "24017": {
       name: "Charles",
-      description: "275",
-      color: "#a9c9fc",
-      hover_color: "#a0c0f2",
+      description: "594:1",
+      color: "#679bf0",
+      hover_color: "#5b8dde",
       url: "default"
     },
     "24019": {
       name: "Dorchester",
-      description: "82",
-      color: "#cddef7",
-      hover_color: "#bccce3",
-      url: "default"
-    },
-    "24021": {
-      name: "Frederick",
-      description: "605",
-      color: "#7ca9f2",
-      hover_color: "#78a3eb",
-      url: "default"
-    },
-    "24023": {
-      name: "Garrett",
-      description: "47",
-      color: "#cddef7",
-      hover_color: "#bccce3",
-      url: "default"
-    },
-    "24025": {
-      name: "Harford",
-      description: "508",
-      color: "#92b9f7",
-      hover_color: "#8db3f0",
-      url: "default"
-    },
-    "24027": {
-      name: "Howard",
-      description: "1005",
-      color: "#679bf0",
-      hover_color: "#5b8dde",
-      url: "default"
-    },
-    "24029": {
-      name: "Kent",
-      description: "36",
-      color: "#cddef7",
-      hover_color: "#bccce3",
-      url: "default"
-    },
-    "24031": {
-      name: "Montgomery",
-      description: "3460",
+      description: "389:1",
       color: "#1a6bed",
       hover_color: "#1765e3",
       url: "default"
     },
+    "24021": {
+      name: "Frederick",
+      description: "429:1",
+      color: "#2e75e8",
+      hover_color: "#2a6fde",
+      url: "default"
+    },
+    "24023": {
+      name: "Garrett",
+      description: "617:1",
+      color: "#7ca9f2",
+      hover_color: "#78a3eb",
+      url: "default"
+    },
+    "24025": {
+      name: "Harford",
+      description: "503:1",
+      color: "#4f8cf0",
+      hover_color: "#4a83e0",
+      url: "default"
+    },
+    "24027": {
+      name: "Howard",
+      description: "324:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
+      url: "default"
+    },
+    "24029": {
+      name: "Kent",
+      description: "540:1",
+      color: "#4f8cf0",
+      hover_color: "#4a83e0",
+      url: "default"
+    },
+    "24031": {
+      name: "Montgomery",
+      description: "304:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
+      url: "default"
+    },
     "24033": {
       name: "Prince George's",
-      description: "1449",
-      color: "#679bf0",
-      hover_color: "#5b8dde",
+      description: "628:1",
+      color: "#7ca9f2",
+      hover_color: "#78a3eb",
       url: "default"
     },
     "24035": {
       name: "Queen Anne's",
-      description: "53",
-      color: "#cddef7",
-      hover_color: "#bccce3",
+      description: "951:1",
+      color: "#92b9f7",
+      hover_color: "#8db3f0",
       url: "default"
     },
     "24037": {
       name: "St. Mary's",
-      description: "137",
-      color: "#bfd8ff",
-      hover_color: "#b2c9ed",
+      description: "829:1",
+      color: "#92b9f7",
+      hover_color: "#8db3f0",
       url: "default"
     },
     "24039": {
       name: "Somerset",
-      description: "75",
-      color: "#cddef7",
-      hover_color: "#bccce3",
+      description: "342:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
       url: "default"
     },
     "24041": {
       name: "Talbot",
-      description: "181",
-      color: "#bfd8ff",
-      hover_color: "#b2c9ed",
+      description: "205:1",
+      color: "#072f70",
+      hover_color: "#032a69",
       url: "default"
     },
     "24043": {
       name: "Washington",
-      description: "380",
-      color: "#a9c9fc",
-      hover_color: "#a0c0f2",
+      description: "397:1",
+      color: "#1a6bed",
+      hover_color: "#1765e3",
       url: "default"
     },
     "24045": {
       name: "Wicomico",
-      description: "358",
-      color: "#a9c9fc",
-      hover_color: "#a0c0f2",
+      description: "289:1",
+      color: "#0747b0",
+      hover_color: "#0343ab",
       url: "default"
     },
     "24047": {
       name: "Worcester",
-      description: "130",
-      color: "#bfd8ff",
-      hover_color: "#b2c9ed",
+      description: "402:1",
+      color: "#2e75e8",
+      hover_color: "#2a6fde",
       url: "default"
     },
     "24510": {
       name: "Baltimore City",
-      description: "2933",
-      color: "#2e75e8",
-      hover_color: "#2a6fde",
+      description: "202:1",
+      color: "#072f70",
+      hover_color: "#032a69",
       url: "default"
     }
   },

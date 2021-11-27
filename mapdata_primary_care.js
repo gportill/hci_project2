@@ -76,170 +76,170 @@ var simplemaps_statemap_mapdata={
   state_specific: {
     "24001": {
       name: "Allegany",
-      description: "43",
-      color: "#cddef7",
-      hover_color: "#bccce3",
-      url: "default"
-    },
-    "24003": {
-      name: "Anne Arundel",
-      description: "391",
+      description: "1651:1",
       color: "#4f8cf0",
       hover_color: "#4a83e0",
       url: "default"
     },
+    "24003": {
+      name: "Anne Arundel",
+      description: "1473:1",
+      color: "#4082ed",
+      hover_color: "#3d7be0",
+      url: "default"
+    },
     "24005": {
       name: "Baltimore County",
-      description: "829",
-      color: "#1a6bed",
-      hover_color: "#1765e3",
+      description: "999:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
       url: "default"
     },
     "24009": {
       name: "Calvert",
-      description: "47",
-      color: "#cddef7",
-      hover_color: "#bccce3",
+      description: "1958:1",
+      color: "#679bf0",
+      hover_color: "#5b8dde",
       url: "default"
     },
     "24011": {
       name: "Caroline",
-      description: "11",
+      description: "3028:1",
       color: "#e8f1ff",
       hover_color: "#e6eefa",
       url: "default"
     },
     "24013": {
       name: "Carroll",
-      description: "75",
-      color: "#bfd8ff",
-      hover_color: "#b2c9ed",
+      description: "2246:1",
+      color: "#92b9f7",
+      hover_color: "#8db3f0",
       url: "default"
     },
     "24015": {
       name: "Cecil",
-      description: "43",
-      color: "#cddef7",
-      hover_color: "#bccce3",
+      description: "2391:1",
+      color: "#92b9f7",
+      hover_color: "#8db3f0",
       url: "default"
     },
     "24017": {
       name: "Charles",
-      description: "63",
-      color: "#bfd8ff",
-      hover_color: "#b2c9ed",
-      url: "default"
-    },
-    "24019": {
-      name: "Dorchester",
-      description: "15",
-      color: "#e8f1ff",
-      hover_color: "#e6eefa",
-      url: "default"
-    },
-    "24021": {
-      name: "Frederick",
-      description: "161",
-      color: "#92b9f7",
-      hover_color: "#8db3f0",
-      url: "default"
-    },
-    "24023": {
-      name: "Garrett",
-      description: "16",
-      color: "#e8f1ff",
-      hover_color: "#e6eefa",
-      url: "default"
-    },
-    "24025": {
-      name: "Harford",
-      description: "140",
-      color: "#92b9f7",
-      hover_color: "#8db3f0",
-      url: "default"
-    },
-    "24027": {
-      name: "Howard",
-      description: "620",
-      color: "#2e75e8",
-      hover_color: "#2a6fde",
-      url: "default"
-    },
-    "24029": {
-      name: "Kent",
-      description: "17",
-      color: "#e8f1ff",
-      hover_color: "#e6eefa",
-      url: "default"
-    },
-    "24031": {
-      name: "Montgomery",
-      description: "1455",
-      color: "#0958d9",
-      hover_color: "#0651cc",
-      url: "default"
-    },
-    "24033": {
-      name: "Prince George's",
-      description: "498",
-      color: "#4082ed",
-      hover_color: "#3d7be0",
-      url: "default"
-    },
-    "24035": {
-      name: "Queen Anne's",
-      description: "18",
-      color: "#e8f1ff",
-      hover_color: "#e6eefa",
-      url: "default"
-    },
-    "24037": {
-      name: "St. Mary's",
-      description: "42",
-      color: "#cddef7",
-      hover_color: "#bccce3",
-      url: "default"
-    },
-    "24039": {
-      name: "Somerset",
-      description: "9",
-      color: "#e8f1ff",
-      hover_color: "#e6eefa",
-      url: "default"
-    },
-    "24041": {
-      name: "Talbot",
-      description: "37",
-      color: "#cddef7",
-      hover_color: "#bccce3",
-      url: "default"
-    },
-    "24043": {
-      name: "Washington",
-      description: "85",
+      description: "2564:1",
       color: "#a9c9fc",
       hover_color: "#a0c0f2",
       url: "default"
     },
-    "24045": {
-      name: "Wicomico",
-      description: "64",
+    "24019": {
+      name: "Dorchester",
+      description: "2133:1",
+      color: "#7ca9f2",
+      hover_color: "#78a3eb",
+      url: "default"
+    },
+    "24021": {
+      name: "Frederick",
+      description: "1588:1",
+      color: "#4082ed",
+      hover_color: "#3d7be0",
+      url: "default"
+    },
+    "24023": {
+      name: "Garrett",
+      description: "1823:1",
+      color: "#679bf0",
+      hover_color: "#5b8dde",
+      url: "default"
+    },
+    "24025": {
+      name: "Harford",
+      description: "1814:1",
+      color: "#679bf0",
+      hover_color: "#5b8dde",
+      url: "default"
+    },
+    "24027": {
+      name: "Howard",
+      description: "521:1",
+      color: "#072f70",
+      hover_color: "#032a69",
+      url: "default"
+    },
+    "24029": {
+      name: "Kent",
+      description: "1140:1",
+      color: "#1a6bed",
+      hover_color: "#1765e3",
+      url: "default"
+    },
+    "24031": {
+      name: "Montgomery",
+      description: "723:1",
+      color: "#0747b0",
+      hover_color: "#0343ab",
+      url: "default"
+    },
+    "24033": {
+      name: "Prince George's",
+      description: "1826:1",
+      color: "#679bf0",
+      hover_color: "#5b8dde",
+      url: "default"
+    },
+    "24035": {
+      name: "Queen Anne's",
+      description: "2792:1",
       color: "#bfd8ff",
       hover_color: "#b2c9ed",
       url: "default"
     },
-    "24047": {
-      name: "Worcester",
-      description: "44",
+    "24037": {
+      name: "St. Mary's",
+      description: "2682:1",
+      color: "#bfd8ff",
+      hover_color: "#b2c9ed",
+      url: "default"
+    },
+    "24039": {
+      name: "Somerset",
+      description: "2853:1",
       color: "#cddef7",
       hover_color: "#bccce3",
       url: "default"
     },
+    "24041": {
+      name: "Talbot",
+      description: "999:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
+      url: "default"
+    },
+    "24043": {
+      name: "Washington",
+      description: "1776:1",
+      color: "#4f8cf0",
+      hover_color: "#4a83e0",
+      url: "default"
+    },
+    "24045": {
+      name: "Wicomico",
+      description: "1612:1",
+      color: "#4f8cf0",
+      hover_color: "#4a83e0",
+      url: "default"
+    },
+    "24047": {
+      name: "Worcester",
+      description: "1178:1",
+      color: "#1a6bed",
+      hover_color: "#1765e3",
+      url: "default"
+    },
     "24510": {
       name: "Baltimore City",
-      description: "629",
-      color: "#2e75e8",
-      hover_color: "#2a6fde",
+      description: "958:1",
+      color: "#0958d9",
+      hover_color: "#0651cc",
       url: "default"
     }
   },
