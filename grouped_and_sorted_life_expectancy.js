@@ -2,7 +2,7 @@ am5.ready(function() {
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv20");
+var root = am5.Root.new("life_expectancy");
 
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/

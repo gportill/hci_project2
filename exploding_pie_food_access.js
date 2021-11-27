@@ -2,7 +2,7 @@ am5.ready(function() {
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv16");
+var root = am5.Root.new("pie_grocery");
 
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/

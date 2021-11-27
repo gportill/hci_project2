@@ -8,57 +8,30 @@
 	<!-- Styles -->
 	<style>
 	#map_air_quality {
+		width:80%;
 	  	min-height: 700px;
 	}
 	#chartdiv {
 	  width: 80%;
 	  height: 500px;
 	}
-	#chartdiv2 {
+	#layered_grocery {
 		  width: 80%;
 		  height: 500px;
 	}
-	#chartdiv3 {
+	/*#chartdiv6 {
+		  width: 80%;
+		  height: 500px;
+	}*/
+	#income {
 		  width: 80%;
 		  height: 500px;
 	}
-	#chartdiv4 {
+	/* {
 		  width: 80%;
 		  height: 500px;
-	}
-	#chartdiv5 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv6 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv7 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv8 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv9 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv10 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv11 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv12 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv13 {
+	}*/
+	/*#chartdiv13 {
 		  width: 80%;
 		  height: 500px;
 	}
@@ -69,28 +42,24 @@
 	#chartdiv15 {
 		  width: 80%;
 		  height: 500px;
-	}
-	#chartdiv16 {
+	}*/
+	#pie_grocery {
 		  width: 90%;
 		  height: 600px;
 	}
-	#chartdiv17 {
+	#chart_housing_cost {
 		  width: 80%;
 		  height: 500px;
 	}
-	#chartdiv18 {
+	/*#chartdiv19 {
+		  width: 80%;
+		  height: 500px;
+	}*/
+	#life_expectancy {
 		  width: 80%;
 		  height: 500px;
 	}
-	#chartdiv19 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv20 {
-		  width: 80%;
-		  height: 500px;
-	}
-	#chartdiv21 {
+	#vert_bw_test_scores {
 		  width: 80%;
 		  height: 500px;
 	}
@@ -112,7 +81,8 @@
 	}
 	#map_physical_activity {
 		display: none;
-		  min-height: 700px;
+		width:80%;
+		min-height: 700px;
 	}
 	#map_primary_care{
 		  width: 70%;
@@ -247,21 +217,21 @@
 		<!-- <p id="states_description">Default</p> -->
 	
 		<h3> % Severe Housing Cost Burden </h3>
-		<div id="chartdiv18"></div>
+		<div id="chart_housing_cost"></div>
 
 		<h3> Income </h3>
-		<div id="chartdiv8"></div> <!-- added -->
+		<div id="income"></div> <!-- added -->
 
 		<h3> Black and White Test Scores </h3>
 		<!-- <div id="chartdiv6"></div> --> 
-		<div id="chartdiv21"></div>
+		<div id="vert_bw_test_scores"></div>
 
 		<h3> Average Test Scores </h3>
 		<div id="map_test_scores"></div>
 
 		<h3> Grocery Store Access </h3>
-		<div id="chartdiv4"></div>
-		<div id="chartdiv16"></div>
+		<div id="layered_grocery"></div>
+		<div id="pie_grocery"></div>
 
 		<h3> Health Access: % Uninsured </h3>
 
@@ -294,7 +264,7 @@
 		<!-- TODO: fix y-axis. it should not start at 0. start at like 65. -->
 		<h3> Life Expectancy </h3>
 		<!-- <div id="chartdiv9"></div> -->
-		<div id="chartdiv20"></div>
+		<div id="life_expectancy"></div>
 
 		<!-- TODO: button to view either percent mental distress map or poor mental health days map -->
 		<h3> % Frequent Mental Distress </h3>

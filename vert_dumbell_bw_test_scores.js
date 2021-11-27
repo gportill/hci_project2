@@ -2,7 +2,7 @@ am5.ready(function() {
 
     // Create root element
     // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-    var root = am5.Root.new("chartdiv21");
+    var root = am5.Root.new("vert_bw_test_scores");
     
     
     // Set themes
