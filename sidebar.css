@@ -68,8 +68,7 @@ a:focus {
 }
 
 #sidebar.active {
-  min-width: 40px;
-  max-width: 40px;
+  width: 40px;
   text-align: center;
 }
 
@@ -80,13 +79,14 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+    padding: 10px;
     background: #6d7fcc;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
+    display: block;
 }
 
 #sidebar ul p {
@@ -98,6 +98,8 @@ a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 #sidebar ul li a:hover {
@@ -168,6 +170,7 @@ a.article:hover {
 #sidebar.active .show_btn {
   display: block;
 }
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
