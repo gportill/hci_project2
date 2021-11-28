@@ -60,11 +60,11 @@
 		  height: 500px;
 	}
 	#map_uninsured {
-		  width: 70%;
+		  min-width: 70%;
 		  height: 300px;
 	}
 	#map_uninsured_adults {
-		  width: 70%;
+		  min-width: 70%;
 		  height: 300px;
 	}
 	/*#map_mental_distress {
@@ -79,11 +79,11 @@
 		display: none;
 	}
 	#map_primary_care{
-		  width: 70%;
+		  min-width: 70%;
 		  height: 300px;
 	}
 	#map_mental_care {
-		  width: 70%;
+		  min-width: 70%;
 		  height: 300px;
 	}
 	#map_mental_days {
@@ -196,10 +196,16 @@
 			<!-- Sidebar  -->
 			<nav id="sidebar">
 				<div class="sidebar-header">
-					<h3>Navigation</h3>
+					<button type="button" id="sidebarCollapse" class="btn collapse_btn">
+						<span>&#10096;</span>
+					</button>
+					<button type="button" id="sidebarShow" class="btn show_btn">
+						<span>&#10097;<span>
+					</button>
 				</div>
-	
+				
 				<ul class="list-unstyled components">
+					<p>Quick Navigation</p>
 					<li class>
 						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Health Outcomes</a>
 						<ul class="collapse list-unstyled" id="homeSubmenu">
@@ -218,46 +224,28 @@
 						<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Finance</a>
 						<ul class="collapse list-unstyled" id="pageSubmenu">
 							<li>
-								<a href="#">Housing cost and living expense</a>
+								<a href="#housing_title">Housing cost and living expense</a>
 							</li>
 							<li>
-								<a href="#">Income</a>
+								<a href="#income_title">Income</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">Test Scores</a>
+						<a href="#test_scores_title">Test Scores</a>
 					</li>
 					<li>
-						<a href="#">Grocery Store Access</a>
+						<a href="#grocery_title">Grocery Store Access</a>
 					</li>
 					<li>
-						<a href="#">Health Access</a>
+						<a href="#health_access_title">Health Access</a>
 					</li>
 				</ul>
 	
-				<ul class="list-unstyled CTAs">
-					<li>
-						<a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-					</li>
-					<li>
-						<a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-					</li>
-				</ul>
 			</nav>
 	
 			<!-- Page Content  -->
 			<div id="content">
-	
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="container-fluid">
-	
-						<button type="button" id="sidebarCollapse" class="btn btn-info">
-							<i class="fas fa-align-left"></i>
-							<span>Toggle Sidebar</span>
-						</button>
-					</div>
-				</nav>
 	
 				<div class="text-center">
 					<div class="col-md-7 p-lg-5 mx-auto my-2">
@@ -324,44 +312,48 @@
 					</div>
 					<!-- <p id="states_description">Default</p> -->
 				
-					<h3> % Severe Housing Cost Burden </h3>
+					<h3 id="housing_title"> % Severe Housing Cost Burden </h3>
 					<div id="chart_housing_cost" class="mx-auto"></div>
 			
-					<h3> Income </h3>
+					<h3 id="income_title"> Income </h3>
 					<div id="income" class="mx-auto"></div> <!-- added -->
 			
-					<h3> Black and White Test Scores </h3>
+					<h3 id="test_scores_title"> Black and White Test Scores </h3>
 					<!-- <div id="chartdiv6"></div> --> 
 					<div id="vert_bw_test_scores" class="mx-auto"></div>
 			
 					<h3> Average Test Scores </h3>
 					<div id="map_test_scores" class="mx-auto"></div>
 			
-					<h3> Grocery Store Access </h3>
+					<h3 id="grocery_title"> Grocery Store Access </h3>
 					<div id="layered_grocery"></div>
 					<div id="pie_grocery"></div>
 			
-					<h3> Health Access: % Uninsured </h3>
+					<h3 id="health_access_title"> Health Access</h3>
+						<h3>% Uninsured </h3>
 			
 					<!-- TODO: Button to view either adults map or children map -->
-					<div class="row">
-						<div class="col">
-							<h4> % Uninsured Adults</h4>
-							<div id="map_uninsured_adults" class="mx-auto"></div>
-						</div>
-						<div class="col">
-							<h4> % Uninsured Children</h4>
-							<div id="map_uninsured" class="mx-auto"></div>
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-4">
+								<h4> % Uninsured Adults</h4>
+								<div id="map_uninsured_adults" class="mx-auto"></div>
+							</div>
+							<div class="col-4">
+								<h4> % Uninsured Children</h4>
+								<div id="map_uninsured" class="mx-auto"></div>
+							</div>
 						</div>
 					</div>
-			
+				
+					<h3># Healthcare Service Providers</h3>
 					<!-- TODO: Button to view either primary care map or mental care map -->
-					<div class="row">
-						<div class="col">
+					<div class="row justify-content-center">
+						<div class="col-4">
 							<h4> # Primary Care Physicians </h4>
 							<div id="map_primary_care" class="mx-auto"></div>
 						</div>
-						<div class="col">
+						<div class="col-4">
 							<h4> # Mental Health Providers </h4>
 							<div id="map_mental_care" class="mx-auto"></div>
 						</div>
@@ -401,6 +393,10 @@
 				});
 	
 				$('#sidebarCollapse').on('click', function () {
+					$('#sidebar, #content').toggleClass('active');
+				});
+
+				$('#sidebarShow').on('click', function () {
 					$('#sidebar, #content').toggleClass('active');
 				});
 			});

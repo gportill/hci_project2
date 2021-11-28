@@ -152,6 +152,23 @@ a.article:hover {
     color: #fff !important;
 }
 
+#sidebar .collapse_btn{
+  display: block;
+  float:right;
+}
+
+#sidebar .show_btn{
+  display:none;
+}
+
+#sidebar.active .collapse_btn {
+  display: none;
+}
+
+#sidebar.active .show_btn {
+  display: block;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -167,7 +184,7 @@ a.article:hover {
 }
 
 #content.active {
-    width: 100%;
+    width: calc(100% - 40px);
 }
 
 /* ---------------------------------------------------
