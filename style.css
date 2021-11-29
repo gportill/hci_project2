@@ -1,3 +1,16 @@
 .btn-secondary{
+    float: right;
     margin-bottom: 10px;
+    width:150px
+}
+
+.tooltip-inner {
+    max-width: 450px !important;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.graph_title {
+    display: inline-block;
+    padding-right:1px;
 }

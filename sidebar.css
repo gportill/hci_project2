@@ -204,6 +204,11 @@ a.article:hover {
     width: calc(100% - 40px);
 }
 
+.refLink {
+    color: navy;
+    text-decoration: underline;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
