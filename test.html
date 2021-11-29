@@ -210,7 +210,7 @@
 				<ul class="list-unstyled components">
 					<p>Quick Navigation</p>
 					<li>
-						<a href="">Introduction</a>
+						<a href="#intro">Introduction</a>
 					</li>
 					<li class>
 						<a href="#ocSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Health Outcomes</a>
@@ -219,12 +219,29 @@
 								<a href="#lifeExpSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Life Expectancy</a>
 									<ul class="collapse list-unstyled" id="lifeExpSubmenu">
 										<li>
-											<a href="#lifeExpBg" class="subSubMenu">Background</a>
+											<a href="#life_exp_bg" class="subSubMenu">Background</a>
+										</li>
+										<li>
+											<a href="#life_exp_title" class="subSubMenu">Graph</a>
+										</li>
+										<li>
+											<a href="#life_exp_analysis" class="subSubMenu">Analysis</a>
 										</li>
 									</ul>
 							</li>
 							<li>
-								<a href="#selected_oc">Mental Health</a>
+								<a href="#MentalHealthSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mental Health</a>
+								<ul class="collapse list-unstyled" id="MentalHealthSubmenu">
+									<li>
+										<a href="#mental_health_bg" class="subSubMenu">Background</a>
+									</li>
+									<li>
+										<a href="#mental_health_graphs" class="subSubMenu">Graphs: Mental Distress Frequency/Poor Mental Health Days</a>
+									</li>
+									<li>
+										<a href="#mental_health_analysis" class="subSubMenu">Analysis</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -326,20 +343,59 @@
 				<div class="text-center">
 					<div class="my-2">
 						<h1>Social Determinants of Health Across Maryland</h1>
-						<p class="lead fw-normal"> Project 2 </p>
+						<p class="lead fw-normal"> Megan Chien, Gwenyth Portillo Wightman, Karine Song</p>
 					</div>
+					<h2 id="intro">Introduction</h2>
+					<p>
+						As students attending school in Baltimore, a number of us have heard of the Black Butterfly effect. 
+						It is the phenomenon where the majority of Baltimore’s Black population is “spread out on both sides of the coveted strip of real estate running down the center of the city like a butterfly’s wings” (CITE). 
+						Some scholars are even coining the phenomenon as an “America Apartheid” in reference to South Africa’s system of segregation that defined their legislation for over 50 years. The spatial racism in Baltimore binds oppression to geography. 
+						In the 1930s, investors began redlining predominantly Black neighborhoods to mark them as the riskiest financial investments. 
+						This lead to a vicious cycle of disinvestment and disparity in Black communities. 
+						With devalued home values (a pricing difference as much as $48,000) and unequal access to credit to develop, repair, or renovate buildings, Black communities continue to suffer from a worsening racial wealth gap (CITE). 
+						The Black Butterfly has public health implications as well. Dilapidated buildings across the city experience problems with blight as well as lead paint. Although Baltimore was the first city in the United States to ban lead paint, the toxic paint and dust still linger in the air and are particularly potent when a row of townhomes is knocked down. 
+						Lead paint has been linked to learning disabilities, developmental delays, ADHD, high blood pressure, and even death (CITE).
+					</p>
+					<img src="intro.png" style="width:400px; float:right; margin-left:10px; padding-right: 7%;">
+					<p>
+						The Black Butterfly in Baltimore inspired us to examine the effects of spatial racism on a larger scale. 
+						We decided to expand to the entirety of Maryland and examine differences between its counties. 
+						In order to more accurately compare and contrast the racial segregation, we chose to focus our analysis on the social determinants of health (SDOH). 
+						These are the “conditions in the environments where people are born, live, learn, work, play, worship, and age that affect a wide range of health, functioning and quality-of-life outcomes and risks” (CITE). 
+						There are five categories of SDOHs:
+					</p>
+					<p>
+						1. Neighborhood and Built Environment<br>
+						2. Economic Stability<br>
+						3. Social and Community Context<br>
+						4. Education Access and Quality<br>
+						5. Health Care Access and Quality
+					</p>
+					<p>
+						We will begin our analysis with an overview of the Maryland health outcomes on the basis of life expectancy and mental health resources. Then, we will analyze each category of SDOH by examining a corresponding factor:
+					</p>
+					<p>
+						1. Neighborhood and Built Environment&#160;&#160;→&#160;&#160;Air Quality & Access to Physical Activity<br>
+						2. Economic Stability&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;→&#160;&#160;Severe Housing Cost Burden<br>
+						3. Education Access and Quality&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;→&#160;&#160;Average Standardized Test Scores<br>
+						4. Social and Community Context&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;→&#160;&#160;Grocery Store Access<br>
+						5. Health Care Access and Quality&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;→&#160;&#160;Healthcare Access and Quality
+					</p>
+
+					<hr>
+					
 					<h2>Health Outcomes in Maryland</h2>
 					<p>
 						To examine social determinants of health across Maryland, we chose two measures as health outcomes: life expectancy and mental health.
 					</p>
 					<h3 id="life_expectancy_title"> Life Expectancy </h3>
-					<h5 id="lifeExpBg">Background</h5>
+					<h5 id="life_exp_bg">Background</h5>
 					<p>
 						Life expectancy measures the average number of years a person can expect to live 
 						[<a class="refLink" href="https://www.countyhealthrankings.org/app/maryland/2021/overview">cite</a>].
 					</p>
 
-					<h4 id="mental_title" class="graph_title" style="text-align: center;"> Average Life Expectancy </h4>
+					<h4 id="life_exp_title" class="graph_title" style="text-align: center;"> Average Life Expectancy </h4>
 					<button type="button" class="btn btn-secondary" data-container="body" data-toggle="tooltip" data-placement="right" 
 						title="For each county, the first bar represents the average life expectancy for Black residents, and the second bar represents the average life expectancy for White residents.&#013;
 						The points on the line represent the average life expectancy for all residents, regardless of race, in a given county. &#013;
@@ -350,12 +406,21 @@
 					<div id="life_expectancy" class="mx-auto"></div>
 					  
 					  
-					  <h5>Analysis</h5>
-					  <p>Although we have not yet considered the impact of social determinants of health on life expectancy, we can clearly see that the average life expectancy for Black residents is consistently lower than the average life expectancy of white residents. By examining the social determinants of health below, we will be able to further analyze the life expectancy data. </p>
+					  <h5 id="life_exp_analysis">Analysis</h5>
+					  <p>
+						We can clearly see that the average life expectancy for Black residents is consistently lower than the average life expectancy of white residents. By examining the social determinants of health below, we will be able to further analyze the life expectancy data. 
+					  </p>
 			  
-					  <h3>Mental Health</h3>
+					  <br>
 
-					  <label for="selectedMap1">Choose a map to view:</label>
+					  <h3>Mental Health</h3>
+					  <h5 id="mental_health_bg">Background</h5>
+					  <p>
+						Our mental health data comes from the Behavioral Risk Factor Surveillance System survey. 
+						To estimate mental health, survey respondents were asked, "Thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?" Individuals who responded 14 or more days per month are considered to have frequent mental distress [CITE COUNTY HEALTH https://www.countyhealthrankings.org/app/maryland/2021/overview].
+					  </p>
+					
+					  <label id="mental_health_graphs" for="selectedMap1">Choose a map to view:</label>
 					  <select id="selected_oc">
 						  <option value="mental_distress" selected>Frequent Mental Distress</option>
 						  <option value="mental_days">Number of Poor Mental Health Days</option>
@@ -365,23 +430,57 @@
 							  var sel = $("#selected_oc").val();
 							  if (sel=='mental_distress') {
 								$("#mental_title").text("% Frequent Mental Distress");
+								$("#mental_distress_htr").show();
+								 $("#mental_days_htr").hide();
 								 $("#map_mental_distress").show();
 								 $("#map_mental_days").hide();
 							  }else if (sel=='mental_days') {
 								 $("#mental_title").text("Average Number of Poor Mental Health Days");
 								 $("#map_mental_distress").hide();
+								 $("#mental_distress_htr").hide();
+								 $("#mental_days_htr").show();
 								 $("#map_mental_days").show();
+								 document.getElementById("mental_htr").title="New tooltip";
 							  }
 						  });     
 					  </script>
-					  <div id="mental_oc_block" class="mx-auto">
-						<h3 id="mental_title" style="text-align: center;"> % Frequent Mental Distress </h3>
-						  <div id="map_mental_distress" class="mx-auto"></div>
-						  <div id="map_mental_days" class="mx-auto"></div>
+					  <div id="mental_oc_block" class="mx-auto" style="padding-top: 10px;">
+						<h4 id="mental_title" class="graph_title" style="text-align: center;"> % Frequent Mental Distress </h4>
+						<button id="mental_distress_htr" type="button" class="btn btn-secondary" data-container="body" data-toggle="tooltip" data-placement="right" 
+						title="The % Frequent Mental Distress chart shows the percentage of people who reported 14 or more poor mental health days per month. Darker colors indicate greater prevalence of frequent mental distress.">
+							<i class="fas fa-info-circle"></i>
+							<span>How to read</span>
+						</button>
+						<button id="mental_days_htr" type="button" class="btn btn-secondary" data-container="body" data-toggle="tooltip" data-placement="right" 
+						title="A darker color on the Number of Poor Mental Health Days chart indicates a larger average number of poor mental health days. ">
+							<i class="fas fa-info-circle"></i>
+							<span>How to read</span>
+						</button>
+						<div id="map_mental_distress" class="mx-auto"></div>
+						<div id="map_mental_days" class="mx-auto"></div>
 					  </div>
-					  
-					<h2 id="env_main_title"> Neighborhood and Built Environment </h2>
 					
+					  <h5 id="mental_health_analysis">Analysis</h5>
+					  <p>
+						These two measures of mental health appear to be highly correlated, since darker colored counties tend to have darker colors on both maps. 
+						By considering the social determinants of health below, we hope to gain insight into which social determinants of health are associated with mental health outcomes.
+					  </p>
+
+					  <hr>
+
+					  <h2>Social Determinants of Health in Maryland</h2>
+
+					<h3 id="env_main_title"> Air Quality and Access to Physical Activity </h3>
+					<h5 id="env_bg">Background</h5>
+					<p>
+						Both air quality and access to physical activity are social determinants of health in the “Neighborhood and Built Environment” category. 
+					</p>
+					<p>
+						The Air Quality Index (AQI) is a measure developed by the Environmental Protection Agency to represent the amount of common ambient air pollutants present in the air at a given time. It uses a normalized scale from 0 to 500, with higher AQI values indicating a higher level of pollution. AQI values under 100 are considered to be satisfactory [CITE EPA https://www.epa.gov/wildfire-smoke-course/wildfire-smoke-and-your-patients-health-air-quality-index].
+					</p>
+					<p>
+						Access to physical activity is defined as residing in a census block that is within a half mile of a park, in an urban census block that is within one mile of a recreational facility, or in a rural census block that is within three miles of a recreational facility [CITE https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/county-health-rankings-model/health-factors/health-behaviors/diet-exercise/access-to-exercise-opportunities].
+					</p>
 					<label for="selectedMap2">Choose a map to view:</label>
 			
 					<select id="selected_env">
@@ -403,19 +502,47 @@
 						});     
 					</script>
 					<div id="env_block" class="mx-auto">
-						<h3 id="env_title" style="text-align: center;"> Median Air Quality Index  </h3>
+						<h4 id="env_title" class="graph_title" style="text-align: center;"> Median Air Quality Index  </h3>
 						<div id="map_air_quality" class="mx-auto"></div>
 						<div id="map_physical_activity" class="mx-auto"></div>
 					</div>
-					<!-- <p id="states_description">Default</p> -->
 				
-					<h3 id="housing_title" style="text-align: center;"> % Severe Housing Cost Burden </h3>
+					<h5 id="env_analysis">Analysis</h5>
+					<p>
+						The Median Air Quality Index map shows that all counties have a median air quality index of 46 or less, which meets the EPA’s requirements for satisfactory air quality. The county with the best air quality index is Howard, which has a median AQI of 28, while the county with the worst median AQI is Allegany, with a median AQI of 46. Howard has an average life expectancy of 79 years, while Allegany’s average life expectancy is 76 years. 
+					</p>
+					<p>
+						Life expectancy is impacted by many factors including air quality. Researchers have shown that long-term human exposure to particulate pollution reduces life expectancy by nearly two years [CITE UNIVERSITY OF CHICAGO https://news.uchicago.edu/story/air-pollution-reduces-global-life-expectancy-nearly-two-years; https://aqli.epic.uchicago.edu/wp-content/uploads/2018/11/AQLI-Report.111918-2.pdf]. While lower air quality is likely not the only cause of Allegany’s lower life expectancy relative to Howard’s, greater amounts of pollution could be one contributing factor to why Allegany’s residents have a lower life expectancy. 
+					</p>
+					<p>
+						Air quality would be an important factor to keep in mind when it comes to promoting better health across Maryland because residents have little power to protect themselves from the air they breathe. In order to ensure equitable health outcomes, policymakers should consider how air pollution affects citizens and how policies limiting air pollution could benefit citizens’ health [CITE UNIVERSITY OF CHICAGO https://news.uchicago.edu/story/air-pollution-reduces-global-life-expectancy-nearly-two-years]. 
+					</p>
+					<p>
+						According to researchers, people with greater access to opportunities for exercise should have better health outcomes. Individuals who have access to physical activity opportunities are typically healthier and have a greater life expectancy and lower prevalence of conditions like obesity and hypertension [CITE https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure]. People who live within a shorter distance to parks, gyms, and other exercise opportunities are more likely to engage in physical activity [CITE Sallis, James F., et al. "Distance between homes and exercise facilities related to frequency of exercise among San Diego residents." Public health reports 105.2 (1990): 179.] 
+					</p>
+					<p>
+						Interestingly, the counties with the greatest access to physical activity do not both have high average life expectancies. Montgomery, where 100% of residents have access to physical activity, has the highest life expectancy in the state, which follows what we would expect based on the research above: areas with greater access to physical activity should have better health outcomes. Meanwhile, 100% of Baltimore City residents have opportunities for exercise, but they also have the lowest average life expectancy in the state. Although Baltimore City residents have access to physical activity, it may be the case that some residents do not take advantage of these opportunities. In order to improve health outcomes for Baltimore City citizens, policymakers and other health department officials should explore the reasons why residents do not use their opportunities to exercise. 
+					</p>
+
+					<h3 id="housing_main_title"> Severe Housing Cost Burden </h3>
+					<h5 id="housing_bg">Background</h5>
+					<p>
+						As a social determinant of health, housing cost burden falls under the “Economic stability”. A household experiences a severe housing cost burden when they spend 50% or more of their household income on housing [CITE COUNTY HEALTH https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/county-health-rankings-model/health-factors/physical-environment/housing-transit/severe-housing-cost-burden]. 
+					</p>
+					<p>
+						We explore associations between severe housing cost burden, cost of living index, and income. The cost of living index measures relative price levels for consumer goods and services, including housing, grocery items, housing, utilities, transportation, and healthcare. The national average for cost of living index is 100 [CITE CENSUS https://www2.census.gov/library/publications/2011/compendia/statab/131ed/tables/prices.pdf]. Data about the cost of living index for Maryland comes from the Maryland Department of Commerce [CITE MD COMMERCE https://opendata.maryland.gov/Housing/Choose-Maryland-Compare-Counties-Quality-Of-Life/dyym-bjv4]. 
+					</p>
+					<p>
+						Our income metric is median household income [CITE COUNTY HEALTH https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/county-health-rankings-model/health-factors/social-and-economic-factors/income/median-household-income].
+					</p>
+
+					<h4 id="housing_title" class="graph_title" style="text-align: center;"> % Severe Housing Cost Burden </h4>
 					<div id="chart_housing_cost" class="mx-auto"></div>
 			
-					<h3 id="income_title" style="text-align: center;"> Median Annual Income </h3>
+					<h4 id="income_title" class="graph_title" style="text-align: center;"> Median Annual Income </h4>
 					<div id="income" class="mx-auto"></div> <!-- added -->
 			
-					<h3 id="test_scores_title" style="text-align: center;"> Average Black and White Test Scores </h3>
+					<h4 id="test_scores_title" class="graph_title" style="text-align: center;"> Average Black and White Test Scores </h4>
 					<!-- <div id="chartdiv6"></div> --> 
 					<div id="vert_bw_test_scores" class="mx-auto"></div>
 			

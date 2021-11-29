@@ -35,8 +35,6 @@ var legend = chart.children.push(
 var data = [{
   "county": "Allegany",
   "all": 48170,
-  "black": 27899,
-  "white": 46434
 }, {
   "county": "Anne Arundel",
   "all": 100916,
@@ -232,9 +230,7 @@ function makeSeries(name, fieldName) {
   legend.data.push(series);
 }
 
-makeSeries("All Races", "all");
-makeSeries("Black", "black");
-makeSeries("White", "white");
+makeSeries("Average income for all households", "all");
 
 
 // Make stuff animate on load

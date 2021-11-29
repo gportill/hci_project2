@@ -98,7 +98,7 @@ series.columns.template.setAll({
   strokeOpacity: 0
 });
 series.columns.template.adapters.add("fill", (fill, target) => {
-  return chart.get("colors").getIndex(series.columns.indexOf(target));
+  return chart.get("colors").getIndex(series.columns.indexOf(target)%2);
 });
 
 series.columns.template.adapters.add("stroke", (stroke, target) => {
