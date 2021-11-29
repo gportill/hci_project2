@@ -249,13 +249,13 @@
 						<a href="#envSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Neighborhood and Built Environment</a>
 						<ul class="collapse list-unstyled" id="envSubmenu">
 							<li>
-								<a href="">Background</a>
+								<a href="#env_bg">Background</a>
 							</li>
 							<li>
-								<a href="#housing_title">Graphs:Air Quality/Physical Activity</a>
+								<a href="#selected_env">Graphs:Air Quality/Physical Activity</a>
 							</li>
 							<li>
-								<a href="#income_title">Analysis</a>
+								<a href="#env_analysis">Analysis</a>
 							</li>
 						</ul>
 					</li>
@@ -263,7 +263,7 @@
 						<a href="#econSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Economic Stability</a>
 						<ul class="collapse list-unstyled" id="econSubmenu">
 							<li>
-								<a href="">Background</a>
+								<a href="#housing_bg">Background</a>
 							</li>
 							<li>
 								<a href="#housing_title">Graph: Housing cost and living expense</a>
@@ -272,7 +272,7 @@
 								<a href="#income_title">Graph: Income</a>
 							</li>
 							<li>
-								<a href="#income_title">Analysis</a>
+								<a href="#housing_analysis">Analysis</a>
 							</li>
 						</ul>
 					</li>
@@ -280,16 +280,16 @@
 						<a href="#eduSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Education Access and Quality</a>
 						<ul class="collapse list-unstyled" id="eduSubmenu">
 							<li>
-								<a href="">Background</a>
+								<a href="#testing_bg">Background</a>
 							</li>
 							<li>
-								<a href="#housing_title">Graph: Housing cost and living expense</a>
+								<a href="#test_scores_title">Graph: Average Black and White Test Scores </a>
 							</li>
 							<li>
-								<a href="#income_title">Graph: Income</a>
+								<a href="#average_scores">Graph: Average Test Scores </a>
 							</li>
 							<li>
-								<a href="#income_title">Analysis</a>
+								<a href="#testing_analysis">Analysis</a>
 							</li>
 						</ul>
 					</li>
@@ -297,16 +297,16 @@
 						<a href="#socSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Social and Community Context</a>
 						<ul class="collapse list-unstyled" id="socSubmenu">
 							<li>
-								<a href="">Background</a>
+								<a href="#grocery_bg">Background</a>
 							</li>
 							<li>
-								<a href="#housing_title">Graph: Housing cost and living expense</a>
+								<a href="#grocery_title">Graph: Grocery Store Access</a>
 							</li>
 							<li>
-								<a href="#income_title">Graph: Income</a>
+								<a href="#grocery_types">Graph: Grocery Store Types</a>
 							</li>
 							<li>
-								<a href="#income_title">Analysis</a>
+								<a href="#grocery_analysis">Analysis</a>
 							</li>
 						</ul>
 					</li>
@@ -314,21 +314,21 @@
 						<a href="#healthSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Healthcare Access and Quality</a>
 						<ul class="collapse list-unstyled" id="healthSubmenu">
 							<li>
-								<a href="">Background</a>
+								<a href="#health_access_bg">Background</a>
 							</li>
 							<li>
-								<a href="#housing_title">Graph: Housing cost and living expense</a>
+								<a href="#uninsured_title">Graph: % Uninsured</a>
 							</li>
 							<li>
-								<a href="#income_title">Graph: Income</a>
+								<a href="#provider_title">Graph: Healthcare Providers</a>
 							</li>
 							<li>
-								<a href="#income_title">Analysis</a>
+								<a href="#health_access_analysis">Analysis</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="">Conclusion</a>
+						<a href="#conclusion">Conclusion</a>
 					</li>
 					<li>
 						<a href="#ref">References</a>
@@ -552,7 +552,8 @@
 						Interestingly, the counties with the greatest access to physical activity do not both have high average life expectancies. Montgomery, where 100% of residents have access to physical activity, has the highest life expectancy in the state, which follows what we would expect based on the research above: areas with greater access to physical activity should have better health outcomes. Meanwhile, 100% of Baltimore City residents have opportunities for exercise, but they also have the lowest average life expectancy in the state. Although Baltimore City residents have access to physical activity, it may be the case that some residents do not take advantage of these opportunities. In order to improve health outcomes for Baltimore City citizens, policymakers and other health department officials should explore the reasons why residents do not use their opportunities to exercise. 
 					</p>
 
-					<h3 id="housing_main_title"> Severe Housing Cost Burden </h3>
+					<h3 id="housing_main_title"> Economic Stability:<br>
+						<span style="color: slategray;">Severe Housing Cost Burden</span> </h3>
 					<h5 id="housing_bg">Background</h5>
 					<p>
 						As a social determinant of health, housing cost burden falls under the “Economic stability”. A household experiences a severe housing cost burden when they spend 50% or more of their household income on housing 
@@ -601,7 +602,8 @@
 
 
 
-					<h3 id="testing_main_title"> Average Standardized Test Scores </h3>
+					<h3 id="testing_main_title"> Education Access and Quality:<br>
+						<span style="color: slategray;">Average Standardized Test Scores </span></h3>
 					<h5 id="testing_bg">Background</h5>
 					<p>
 						Average standardized test scores are considered a measure of “Education access and quality”. Average standardized test scores range from -3.5 to 3.5 and are centered about the national average of 0. A score of 1 would indicate that a county performs one standard deviation over the national average, while a score of -1 means that a county performs one standard deviation below the national average
@@ -618,7 +620,7 @@
 					<!-- <div id="chartdiv6"></div> --> 
 					<div id="vert_bw_test_scores" class="mx-auto"></div>
 			
-					<h4 style="text-align: center; padding-top: 40px;" class="graph_title"> Average Test Scores 
+					<h4 id="average_scores" style="text-align: center; padding-top: 40px;" class="graph_title"> Average Test Scores 
 						<button type="button" class="btn btn-secondary" data-container="body" data-toggle="tooltip" data-placement="right" 
 							title="On the Average Test Scores graph, counties in green score above the national average, and counties in red score below the national average. Counties that are lighter in color (closer to white) are closer to the national average of 0.">
 								<i class="fas fa-info-circle"></i>
@@ -645,7 +647,8 @@
 					</p>
 
 
-					<h3 id="grocery_main_title"> Average Standardized Test Scores </h3>
+					<h3 id="grocery_main_title"> Social and Conmmunity Context:<br>
+						<span style="color: slategray;">Grocery Store Access</span></h3>
 					<h5 id="grocery_bg">Background</h5>
 
 					<p>
@@ -713,7 +716,7 @@
 					<p>
 						The primary care physicians data describes the ratio of a county’s population to the number of primary care physicians in that county. The mental health providers data describes the ratio of a county’s population to the number of mental health providers in that county.
 					</p>
-						<h4 style="text-align: center;" class="graph_title">% Uninsured </h4>
+						<h4 id="uninsured_title" style="text-align: center;" class="graph_title">% Uninsured </h4>
 							<button type="button" class="btn btn-secondary" data-container="body" data-toggle="tooltip" data-placement="right" 
 						title="A darker color on the % Uninsured maps indicates that the county has a larger percentage of uninsured adults or children.">
 							<i class="fas fa-info-circle"></i>
@@ -733,7 +736,7 @@
 						</div>
 					</div>
 				
-					<h4 style="text-align: center;" class="graph_title">Healthcare Providers</h4>
+					<h4 id="provider_title" style="text-align: center;" class="graph_title">Healthcare Providers</h4>
 					<button type="button" class="btn btn-secondary" data-container="body" data-toggle="tooltip" data-placement="right" 
 					title="A darker color on the Healthcare Providers maps indicates a lower ratio of residents to each healthcare provider (better healthcare access). ">
 						<i class="fas fa-info-circle"></i>
